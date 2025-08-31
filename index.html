@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of stories about a quokka.">
+    
+    <!-- Page Title -->
+    <title>Quokka Chronicles</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Script-->
+    <script src="./js/script.js" defer></script>
+</head>
+<body class="light-theme">
+
+    <div class="body-content">
+        <div class="left-content">
+            
+            <header class="site-header">
+                <div class="logo-container">
+                    <div class="logo">qk</div>
+                </div>
+            </header>
+
+        </div>
+        <div class="right-content">        
+            
+            <nav class="main-nav">
+                <span class="panel-nav">
+                    <button id="btn-narratives" class="menu-button" aria-label="Open or hide the list of stories" data-show-panel-id="narratives-panel">
+                        Narratives
+                    </button>
+                    <button id="btn-theme" class="menu-button" aria-label="Toggle color theme" data-light-word="Illumine" data-dark-word="Nocturne">
+                        Nocturne
+                    </button>
+                    <button id="btn-provenance" class="menu-button" aria-label="Show information about the project" data-show-panel-id="about-panel">
+                        Provenance
+                    </button>
+                    <button id="btn-character" class="menu-button" hidden>
+                        {{qk.characterName}}
+                    </button>
+                </span>
+            </nav>
+
+            <main id="reading-panel" class="scrollable-area">
+                <article class="chapter">
+                    Oops! There was an issue loading this chapter.
+                </article>
+            </main>
+
+        </div>
+    </div>
+
+    <aside id="narratives-panel" class="modal-panel">
+        Narratives
+    </aside>
+
+    <footer id="about-panel" class="modal-panel">
+        Provenance
+        Quokka Chronicles is a personal portfolio project by [Your Name], designed to showcase modern front-end development techniques with a focus on readability, accessibility, and minimalist design.
+        Contact: your.email@example.com
+    </footer>
+
+</body>
+</html>
