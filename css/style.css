@@ -76,7 +76,7 @@ body {
 
 .logo {
 	font-family: "Raleway", sans-serif;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 300;
     color: var(--secondary-base); /* Logo uses secondary accent color */
     padding: 0.5rem 0;
@@ -226,6 +226,7 @@ article p sup.endnote {
     position: relative;
     line-height: 100%;
     top:2px;
+    margin-left:2px;
     cursor: pointer;
 }
 article p sup.endnote:hover,
