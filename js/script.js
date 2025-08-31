@@ -377,7 +377,7 @@ qk.Chapter = (me => {
                 case ContentType.divider: html += `<p class="divider">${p.content.repeat(p.length)}</p>`; break
                 default:
                     let x = p.content
-                        .replace(/\[=(.)=\]/, '<sup class="endnote">$1</sup>')
+                        .replace(/\[=(.)=\]/g, '<sup class="endnote">$1</sup>')
                         .replace(/\{\{qk\.characterName\}\}/g, me.Preferences.get('characterName'));
                     html += `<p>${x}</p>`;
             }
