@@ -86,5 +86,5 @@ The Elder Root's smile widened into a genuine, delighted chuckle. "A truly remar
 
 "However," the Elder Root continued, his voice softening, "the tapestry of knowledge is vast, far too wide for any single quokka to grasp entirely. That is why, when we seek to dive deeper, to truly understand the intricate threads, we must choose to focus on one path. Only by committing to one 'paw' can you truly embrace the depths of its wisdom."
 
-[Ask Mara to be your paw](0000-quokka-chronicles)
-[Ask Kael to be your paw](0000-quokka-chronicles)
+[Ask Mara to be your paw](9999-tbc)
+[Ask Kael to be your paw](9999-tbc)
