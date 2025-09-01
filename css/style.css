@@ -66,7 +66,7 @@ body {
 
 .right-content {
     flex-grow: 1;
-    overflow: auto;
+    /*overflow: auto;*/
     border-left: var(--secondary-base) 2px solid;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .modal-panel.is-active {
-    opacity: 0.85;
+    opacity: 0.94;
     pointer-events: auto;
     visibility: visible;    
 }
@@ -144,6 +144,12 @@ body {
     vertical-align: middle;
     line-height: 100%;
     margin-bottom: 1rem;
+}
+.modal-panel {
+    overflow-y: scroll;
+}
+.modal-panel::-webkit-scrollbar {
+    display: none;
 }
 
 /* Reading area */
@@ -219,9 +225,12 @@ article ul.endnotes {
     border-top: 1px solid var(--control-lines);
 }
 article p sup.endnote {
-    color: var(--secondary-base); 
+    color: var(--reading-background); 
+    background-color: var(--secondary-base);
+    border-radius: 4px;
     text-decoration: none;
-    font-size: smaller;
+    font-size: 0.6rem;
+    padding:0.05rem 0.3rem;
     vertical-align: super;
     position: relative;
     line-height: 100%;
@@ -231,7 +240,7 @@ article p sup.endnote {
 }
 article p sup.endnote:hover,
 article p sup.endnote:focus {
-    color: var(--secondary-effect);
+    background-color: var(--secondary-effect);
 }
 article .endnotes li {
     margin: 0.5rem;
@@ -278,4 +287,45 @@ article nav button::after {
     font-size: 1.25rem;
     color: var(--secondary-effect);
     transition: color .3s ease;
+}
+
+
+aside#narratives-panel button[data-target] {
+    display: inline-block;
+    min-width: 44%;
+    padding: 1rem;
+    background-color: var(--reading-background);
+    border: 1px var(--secondary-base) solid;
+    cursor: pointer;
+    font: normal 1rem "Raleway", sans-serif; 
+    text-transform: uppercase;
+    color: var(--reading-text);
+}
+aside#narratives-panel div.chapter-divider::after {
+    content: '↓';
+}
+aside#narratives-panel div.selection {
+    display: inline-block;    
+    padding: 1rem;
+    background-color: var(--control-background);    
+    border: 1px var(--secondary-base) solid;
+    border-radius: 25px;
+    font: normal 0.9rem "Raleway", sans-serif; 
+    text-transform: uppercase;
+    color: var(--reading-text);
+}
+@media only screen and (max-width: 600px) {
+    article {
+        font-size: 0.88rem;
+        width: auto;
+        margin-right: 5vw;
+    }
+    article h1 {
+        font-size: 2rem;
+    }
+    aside#narratives-panel button[data-target],
+    aside#narratives-panel div.selection {
+        font-size: 0.82rem;
+        padding: 0.5rem;
+    }
 }
