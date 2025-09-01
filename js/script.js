@@ -119,7 +119,7 @@ qk.Modal = (me => {
     return {
         panels: () => Panels,
         opened: () => openedPanels,
-        closeAll: _closeAll()
+        closeAll: _closeAll
     }
 
 })(qk);
@@ -204,6 +204,7 @@ qk.Chapter = (me => {
         paragraph: 'p'
     }
     const panel = document.getElementById('reading-panel');
+    const narr = document.querySelector('#narratives-panel .modal-content');
 
     /**
      * Fetches the XML content from the specified filename.
@@ -356,6 +357,60 @@ qk.Chapter = (me => {
     }
 
     /**
+     * Parses a string representing a chapter's pathlog and generates the corresponding HTML.
+     * The string is split by the ">" character. Each item is then parsed to determine
+     * if it is a chapter title or a selection.
+     *
+     * @param {string} pathlogString The string containing the pathlog,
+     * e.g., "[Chapter One](intro)>[Chapter Two](part_2)>[Continue...]"
+     * @returns {string} The generated HTML string with `<a>` tags for chapters and
+     * `<div>` tags for selections, separated by dividers.
+     */
+    function _parsePathlogToHTML(pathlogString) {
+        // Return an empty string if the input is not a valid string.
+        if (typeof pathlogString !== 'string' || pathlogString.trim() === '') {
+            return '';
+        }
+
+        // Regex to match the [Chapter title](filename) format.
+        const chapterRegex = /^\[([^\]]+)\]\(([^)]+)\)$/;
+        
+        // Regex to match the [Selection] format.
+        const selectionRegex = /^\[([^\]]+)\]$/;
+        
+        // Split the string by the ">" delimiter to get an array of items.
+        const items = pathlogString.replace(/\{\{qk\.characterName\}\}/g, me.Preferences.get('characterName')).split('>');
+        
+        // Use map to process each item and build an array of HTML snippets.
+        const htmlSnippets = items.map(item => {
+            const trimmedItem = item.trim();
+            
+            // Check for a chapter title match.
+            const chapterMatch = trimmedItem.match(chapterRegex);
+            if (chapterMatch) {
+            const title = chapterMatch[1].trim();
+            const filename = chapterMatch[2].trim();
+            // Use the filename for href, and the title for the link text.
+            return `<button class="chapter-title" data-target="${filename}" target="_self">${title}</button>`;
+            }
+            
+            // Check for a selection match.
+            const selectionMatch = trimmedItem.match(selectionRegex);
+            if (selectionMatch) {
+            const selectionText = selectionMatch[1].trim();
+            // Use a div for the selection text.
+            return `<div class="selection">${selectionText}</div>`;
+            }
+            
+            // If no match is found, return an empty string to be ignored.
+            return '';
+        });
+        
+        // Filter out any empty strings from invalid items and join with the divider.
+        return htmlSnippets.filter(snippet => snippet !== '').join('<div class="chapter-divider"></div>');
+    }
+
+    /**
      * Converts a structured chapter data object into a complete HTML string for display.
      * This function dynamically generates HTML for content paragraphs (including endnote references),
      * navigation pathways, and a styled endnotes section with custom markers.
@@ -467,6 +522,19 @@ qk.Chapter = (me => {
         });
     }
 
+    function _addPathlogListeners() {
+        narr.querySelectorAll('button[data-target]').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                me.Modal.closeAll();
+                const filename = e.target.dataset.target || null;
+                if (filename) {
+                    _load(filename);
+                }
+            });
+        });
+    }
+
     async function _load(filename) {
         filename = filename || me.Preferences.get('chapter');
         try {
@@ -474,8 +542,10 @@ qk.Chapter = (me => {
             const lines = _getLines(f);
             const ch = _parseChapter(lines);
             console.log(ch);
-            const html = _htmlize(ch);
+            const html = _htmlize(ch);            
             panel.innerHTML = html;
+            narr.innerHTML = _parsePathlogToHTML(ch.pathlog);
+            _addPathlogListeners();
             ch.endnotes.length && _addEndnoteListeners();
             ch.pathways.length && _addPathwaysListeners();
             panel.firstChild.scrollIntoView({
