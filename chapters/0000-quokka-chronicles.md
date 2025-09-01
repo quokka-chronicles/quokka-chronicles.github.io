@@ -1,4 +1,4 @@
-@0
+@[Quokka-Chronicles](0000-quokka-chronicles)
 # Quokka-Chronicles
 
 Beneath the sprawling canopy of ancient Eucalyptus[1](A genus of tall, aromatic trees native to Australia, known for their peeling bark and oil-rich leaves. Their scent is iconic in the Australian landscape and often associated with koalas, which feed on their leaves.) and the tangled embrace of Melaleuca[2](Also called "paperbark" or "honey myrtle," these are shrubby trees with soft, peeling bark and brush-like flowers. They thrive in damp areas and are closely related to the tea tree.) thickets, lies a world of perpetual twilight and subtle shifts. This is the domain of the quokka, a small marsupial thriving in the dense, verdant heart of what remains of the great southern scrublands. Here, the air carries the rich, damp scent of decaying leaves and the faint, sweet perfume of unseen blossoms, a complex tapestry of odors that guides a quokka through its crepuscular existence.

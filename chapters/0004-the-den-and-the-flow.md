@@ -1,4 +1,4 @@
-@0000
+@[Quokka-Chronicles](0000-quokka-chronicles) > [The Shifting Hunters](0000-quokka-chronicles) > [The Fungal Veil](0002-the-fungal-veil) > [The Embrace](0003-the-embrace) > [The Den and the Flow](0004-the-den-and-the-flow)
 # The Den and the Flow
 Time, for the joey, now flowed in a comforting rhythm of warmth and discovery. The cold, terrifying night of its abandonment had faded into a hazy, dream-like memory, replaced by the vibrant chaos of the fox den. Here, nestled deep within the earth, beneath the gnarled roots of an ancient Eucalyptus on a sun-dappled hillside, was home. The fox mother, a constant source of tender licks and soft nudges, poured her boundless affection into all her kits, the small quokka included. Her partner, the wise male with the rust-and-silver fur, was the den's quiet anchor. His deep, maroon eyes, filled with the calm of countless seasons, watched over them all, a silent wellspring of wisdom and unwavering support.
 

@@ -1,4 +1,4 @@
-@507-222-301
+@[Quokka-Chronicles](0000-quokka-chronicles) > [The Shifting Hunters](0000-quokka-chronicles) > [The Fungal Veil](0002-the-fungal-veil)
 # The Fungal Veil
 The world inverted in a sickening lurch. One moment, the joey was cocooned in the familiar warmth of the pouch, the next, it was tumbling, a small, helpless bundle of fur, through cold, open air. It landed with a soft, squishy thud, not on solid earth, but amidst a cluster of strange, bulbous growths that pulsed with a faint, internal luminescence.
 

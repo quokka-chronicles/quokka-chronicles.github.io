@@ -1,3 +1,4 @@
+@[Quokka-Chronicles](0000-quokka-chronicles) > [The Shifting Hunters](0000-quokka-chronicles) > [The Fungal Veil](0002-the-fungal-veil) > [The Embrace](0003-the-embrace) > [The Den and the Flow](0004-the-den-and-the-flow) > [The Wind, the Listener, and the Namesless](0005-the-four-furr) > [{{qk.characterName}}] > [The Student and the Spark](0006-the-student-and-the-spark)
 # The Student and the Spark
 The seasons had cycled many times since Niran and Warra received their names, and the siblings had left childhood behind. They were no longer kits, but young adults, their bonds as strong as the ancient trees and their understanding of each other as deep as the hidden river currents. The world, once a place of simple games and small fears, was now a complex tapestry of wonder and threat. This was the time for big decisions, and for {{qk.characterName}}, the world was beginning to feel much larger than their den.
 

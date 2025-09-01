@@ -1,3 +1,4 @@
+@[Quokka-Chronicles](0000-quokka-chronicles) > [The Shifting Hunters](0000-quokka-chronicles) > [The Fungal Veil](0002-the-fungal-veil) > [The Embrace](0003-the-embrace) > [The Den and the Flow](0004-the-den-and-the-flow) > [The Wind, the Listener, and the Namesless](0005-the-four-furr) > [{{qk.characterName}}] > [The Student and the Spark](0006-the-student-and-the-spark) > [Stay with the brothers] > [Echoes in the Broken Lands](0b00-echoes-in-broken-lands)
 # Echoes in the Broken Lands
 
 The Quokka University and its promises faded into a distant thought, replaced by the immediate, comforting warmth of familiar fur. The ache of leaving had transformed into a deep sense of purpose. {{qk.characterName}} was here, with her brothers. This was her family, her pack, and together, they would face whatever the strange, shifting world threw at them.
