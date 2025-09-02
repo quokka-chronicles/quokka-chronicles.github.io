@@ -315,6 +315,15 @@ aside#narratives-panel div.selection {
     color: var(--reading-text);
 }
 @media only screen and (max-width: 600px) {
+    .left-content {
+        width: auto;
+        background-color: var(--secondary-base);
+    }
+    .logo {
+        font-size: 0.88rem;
+        margin: 0.2rem;        
+        color: var(--reading-background);
+    }
     article {
         font-size: 0.88rem;
         width: auto;
