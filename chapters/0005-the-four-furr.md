@@ -30,6 +30,6 @@ The snowy foxes nodded in admiration. They were all so different from them, but 
 
 The quokka blinked, and for the first time, she realized she didn't have one. She had always just been "the quokka," or "sister." Her three brothers, suddenly quiet, looked at her, then at each other. They had their names. She deserved one, too. A name that honored her, her journey, and her place in their family. And she said, "My name is:"
 
-[Alinta, the flame](0006-the-student-and-the-spark?characterName=Alinta)
-[Kaia, raised by the fox](0006-the-student-and-the-spark?characterName=Kaia)
-[Narla, the quokka](0006-the-student-and-the-spark?characterName=Narla)
+[Falinta, the flame](0006-the-student-and-the-spark?characterName=Alinta)
+[Faia, raised by the fox](0006-the-student-and-the-spark?characterName=Kaia)
+[Farla, the quokka](0006-the-student-and-the-spark?characterName=Narla)
