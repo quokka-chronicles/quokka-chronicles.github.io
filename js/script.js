@@ -453,7 +453,7 @@ qk.Chapter = (me => {
             let css = '', counter = 0;
             chapter.endnotes.forEach(endnote => {
                 const marker = btoa(`endnote-marker-${String(++counter).padStart(4, '0')}`).replace(/=/g, '').toLowerCase();
-                html += `<li class="${marker}">${endnote.content}</li>`;
+                html += `<li class="${marker}" data-symbol="${endnote.symbol}">${endnote.content}</li>`;
                 css += `.endnotes li.${marker}::marker { content: '${endnote.symbol} '; }\n`
             });
             html += '<ul>';
@@ -498,6 +498,19 @@ qk.Chapter = (me => {
                 } else {
                     console.warn(`Endnote target element not found`);
                 }
+            });
+            let showTimeout;
+            mark.addEventListener('mouseover', (e) => {
+                showTimeout = setTimeout(() => {
+                    const rect = e.target.getBoundingClientRect();
+                    const li = document.querySelector(`ul.endnotes li[data-symbol="${mark.textContent}"]`);
+                    console.log(e.target.getBoundingClientRect())
+                    me.Tooltip.show(li.textContent, rect.top, rect.left);
+                }, 500); 
+            });
+            mark.addEventListener('mouseout', (e) => {
+                clearTimeout(showTimeout);
+                me.Tooltip.hide();
             });
         });
     }
@@ -585,6 +598,59 @@ qk.Character = (me => {
 
     return {
         start: _characterSet
+    }
+})(qk);
+
+qk.Tooltip = (me => {
+    "use strict";
+
+    const tooltipBox = document.createElement("div");
+    tooltipBox.className = "tooltip hidden";
+    tooltipBox.id = "tooltip";    
+    document.body.appendChild(tooltipBox);
+
+    function _show(content, rectTop, rectLeft) {
+        tooltipBox.innerText = content;
+
+        // Temporarily position off-screen to measure size
+        tooltipBox.style.top = "0px";
+        tooltipBox.style.left = "0px";
+
+        const tooltipRect = tooltipBox.getBoundingClientRect();
+        const tooltipWidth = tooltipRect.width;
+        const tooltipHeight = tooltipRect.height;
+
+        const padding = 10;
+        let top = rectTop + padding;
+        let left = rectLeft + padding;
+
+        // Check if it overflows the right edge
+        if (left + tooltipWidth > window.innerWidth) {
+            left = rectLeft - tooltipWidth - padding;
+        }
+
+        // Check if it overflows the bottom edge
+        if (top + tooltipHeight > window.innerHeight) {
+            top = rectTop - tooltipHeight - padding;
+        }
+
+        // Apply final position
+        tooltipBox.style.top = `${top}px`;
+        tooltipBox.style.left = `${left}px`;
+        
+        tooltipBox.classList.remove("hidden");
+        tooltipBox.classList.add('visible');
+    }
+
+
+    function _hide() {
+        tooltipBox.classList.remove('visible');
+        tooltipBox.classList.add("hidden");
+    }
+
+    return {
+        show: _show,
+        hide: _hide
     }
 })(qk);
 
