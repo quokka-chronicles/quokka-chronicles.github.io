@@ -314,6 +314,27 @@ aside#narratives-panel div.selection {
     text-transform: uppercase;
     color: var(--reading-text);
 }
+div#tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33vw;
+  height: auto;
+  padding: 20px;
+  background-color: var(--reading-background);
+  font-size: 0.85rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* Prevent interaction while hidden */
+}
+
+div#tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 @media only screen and (max-width: 600px) {
     .left-content {
         width: auto;
