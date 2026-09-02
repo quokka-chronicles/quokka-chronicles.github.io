@@ -359,3 +359,28 @@ div#tooltip.visible {
         padding: 0.5rem;
     }
 }
+aside#lingua-panel button[data-lang] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--control-background);
+    color: var(--control-text);
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0.5rem;
+    border:none;
+}
+
+/* Hover effect */
+aside#lingua-panel button[data-lang]:hover {
+    background-color: var(--secondary-effect);
+}
+
+/* Active/Click effect */
+aside#lingua-panel button[data-lang]:active {
+    background-color: var(--secondary-base);
+}

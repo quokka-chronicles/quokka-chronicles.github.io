@@ -47,6 +47,9 @@
                     <button id="btn-provenance" class="menu-button" aria-label="Show information about the project" data-show-panel-id="about-panel">
                         Provenance
                     </button>
+                    <button id="btn-lingua" class="menu-button" aria-label="Swap language" data-show-panel-id="lingua-panel">
+                        Lingua
+                    </button>
                     <button id="btn-character" class="menu-button" hidden>
                         {{qk.characterName}}
                     </button>
@@ -66,9 +69,14 @@
         Narratives
     </aside>
 
+    <aside id="lingua-panel" class="modal-panel">
+        <button data-lang="en">EN</button>
+        <button data-lang="sk">SK</button>
+    </aside>
+
     <footer id="about-panel" class="modal-panel">
         Provenance
-        Quokka Chronicles is a personal portfolio project by Ramon, designed to showcase modern front-end development techniques with a focus on readability, accessibility, and minimalist design.
+        Quokka Chronicles is a personal portfolio project by Ramon,<br>designed to showcase modern front-end development<br>techniques with a focus on readability, accessibility, and minimalist design.
         Contact: des@chello.com
     </footer>
 

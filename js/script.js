@@ -11,6 +11,7 @@ qk.Preferences = (me => {
         theme: "light-theme",
         chapter: "0000-quokka-chronicles",
         characterName: null,
+        lang: "en", // <--- 1. Add default language preference
     };
 
     const COOKIE_NAME = 'qk';
@@ -42,6 +43,7 @@ qk.Preferences = (me => {
             prefs.theme = cookie?.theme || prefs.theme;
             prefs.chapter = cookie?.chapter || prefs.chapter;
             prefs.characterName = cookie?.characterName || prefs.characterName;
+            prefs.lang = cookie?.lang || prefs.lang;
         }
     }
 
@@ -74,12 +76,16 @@ qk.Modal = (me => {
     document.querySelectorAll('.modal-panel').forEach(panel => {
         Panels[panel.id] = panel;        
         const wrapper = document.createElement('div');
-        wrapper.textContent = panel.textContent;
-        wrapper.className = 'modal-content'      
+        wrapper.className = 'modal-content';
+        
+        // Preserve existing HTML elements instead of converting to textContent
+        while (panel.firstChild) {
+            wrapper.appendChild(panel.firstChild);
+        }
+        
         panel.innerHTML = '';
         panel.appendChild(wrapper);
         panel.insertBefore(_createButtonClose(), panel.firstChild);
-        
     });
 
     function _createButtonClose() {
@@ -95,10 +101,6 @@ qk.Modal = (me => {
         button.addEventListener('click', _open);
     })
 
-    /**
-     * Opens triggered panel
-     * @param {Event} e 
-     */
     function _open(e) {
         _closeAll();
         const panel = Panels[e.target.dataset.showPanelId];
@@ -106,9 +108,6 @@ qk.Modal = (me => {
         openedPanels.push(panel);
     }
 
-    /**
-     * Closes all opened modal panes and clears the list of opened panes
-     */
     function _closeAll() {        
         openedPanels.forEach(panel => {
             panel.classList.remove(CLASSNAME_ACTIVE);
@@ -213,12 +212,14 @@ qk.Chapter = (me => {
      * @throws {Error} - If the network request fails or the file is not found.
      */
     async function _fetch(filename) {
-        const chapterPath = `./chapters/${filename}`;
+        const lang = me.Preferences.get('lang') || 'en';
+        const folder = lang === 'sk' ? 'chapters_SK' : 'chapters';
+        const chapterPath = `./${folder}/${filename}`;
         const response = await fetch(chapterPath);
 
         if (!response.ok) {
             if (response.status === 404) {
-                throw new Error(`Chapter file not found: ${filename}`);
+                throw new Error(`Chapter file not found: ${filename} in (${folder})`);
             }
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -599,6 +600,32 @@ qk.Character = (me => {
     return {
         start: _characterSet
     }
+})(qk);
+
+qk.Language = (me => {
+    "use strict";
+    const panel = document.getElementById('lingua-panel');
+    if (!panel) return {};
+
+    panel.querySelectorAll('button[data-lang]').forEach(btn => {
+        btn.addEventListener('click', e => {
+            e.preventDefault();
+            const selectedLang = e.target.dataset.lang;
+            
+            if (selectedLang && selectedLang !== me.Preferences.get('lang')) {
+                // Save preference
+                me.Preferences.set('lang', selectedLang);
+                
+                // Close the modal panel
+                me.Modal.closeAll();
+                
+                // Reload the current chapter using the new language folder
+                me.Chapter.load(me.Preferences.get('chapter'));
+            }
+        });
+    });
+
+    return {};
 })(qk);
 
 qk.Tooltip = (me => {
