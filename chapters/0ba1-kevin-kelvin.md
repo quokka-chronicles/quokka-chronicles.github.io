@@ -77,7 +77,7 @@ Later that morning, the siblings separated for their lessons. Warra went to soun
 
 The instructor had not yet arrived, so the students gathered in a clearing ringed by thick ferns and twisted roots. The air was filled with a quiet buzz of anticipation and nervous energy. Some foxes crouched low, practicing stealthy movements, their eyes sharp and focused. Squirrels darted between tree trunks, testing the limits of their agility, while a badger clumsily attempted to bury himself under a pile of leaves, eliciting a few amused chuckles from the group.
 
-A few students whispered excitedly about the upcoming lesson, sharing tips and tricks they had learned before. Among them, some were already practicing what they called "quokka crazy things" — playful, unpredictable maneuvers designed to confuse and evade any pursuer. These antics brought a lightness to the waiting time, a way to channel their eagerness and sharpen their skills even before the formal instruction began.
+A few students whispered excitedly about the upcoming lesson, sharing tips and tricks they had learned before. Among them, some were already practicing what they called "falling leaf" — playful, unpredictable maneuvers designed to confuse and evade any pursuer. These antics brought a lightness to the waiting time, a way to channel their eagerness and sharpen their skills even before the formal instruction began.
 
 The art of hiding was more than just physical skill; it was a dance with the environment, a lesson in patience and awareness. Learning to disappear meant understanding the subtle shifts in light and shadow, the rustle of leaves, the scent carried on the breeze. It required tuning into the forest’s rhythm, becoming part of its whispering secrets. This was why the class was so vital — mastering hiding was not just about survival, but about harmony with the world around them, a way to move unseen and unheard, blending seamlessly into the tapestry of nature.
 
@@ -121,7 +121,7 @@ She nearly melted into the moss.
 
 He guided her gently, showing her how to sink into the ferns, how to let her breathing match the rhythm of the leaves. His voice was soft, patient, warm. Every word made her heart flutter.
 
-Halfway through the lesson, Kelvin slipped into the clearing, and the entire group reacted at once. Tails lifted, ears perked, whispers fluttered through the ferns — the snow‑fox twins were legends, and everyone knew it. Kelvin offered a bright, easy greeting to {{qk.characterName}}, his tail swaying in friendly recognition, yet her crimson line stayed still. Not a single spark.
+Halfway through the lesson, Kelvin slipped into the clearing, and the entire group reacted at once. Tails lifted, ears perked, whispers fluttered through the ferns — the snow‑fox brothers were legends, and everyone knew it. Kelvin offered a bright, easy greeting to {{qk.characterName}}, his tail swaying in friendly recognition, yet her crimson line stayed still. Not a single spark.
 
 Kelvin noticed nothing unusual.
 Kevin noticed everything.
