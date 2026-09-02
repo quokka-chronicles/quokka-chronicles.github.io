@@ -8,7 +8,7 @@ Just beyond the line of oppressive, stagnant air, her brothers were waiting. The
 
 But it was their eyes that held {{qk.characterName}}'s gaze. The entire eyeball was a shocking, bottomless black, a void that seemed to drink the light. In the center, where an iris should have been, was a thin, vertical line of brilliant, molten orange. It was not a static ring, but a pulsing, living sliver of fire that ran from the very top of the black sphere to the bottom. As the leading fox looked at her, the line of orange light briefly widened, an unnerving, deliberate adjustment of focus. Then, the line angled slightly, as if the fox was tilting its entire eye to see her better.
 
-"Hark, a quokka of the mering lands," the fox leader said, its voice a low, melodic rumble, the words spoken with an archaic grace. "You are quite a distance from your home territory, are you not? My scouts report you have seen some disturbing things. Pray, tell us, what has brought you to these perilous borders?"
+"Hark, a quokka of the merging lands," the fox leader said, its voice a low, melodic rumble, the words spoken with an archaic grace. "You are quite a distance from your home territory, are you not? My scouts report you have seen some disturbing things. Pray, tell us, what has brought you to these perilous borders?"
 
 The siblings, momentarily overwhelmed by the noble tone and the strangeness of the foxes' eyes, huddled together. Koorli, the most timid of them, whimpered softly, his body pressed tight against his brothers. Warra and {{qk.characterName}}, however, exchanged a look. They had faced a hidden nightmare in the swamp; there was no room for hesitation. Warra stepped forward.
 
@@ -36,15 +36,15 @@ A moment later, it re-emerged with another of its kind, and both were carrying p
 
 Alaric's orange eyes flickered, the thin line of light widening slightly. "They are... friends. They are not like The Mergers," he explained, his voice gentle. "They are... different. They create, they care for the land. They share food and warmth. But sometimes, they are quite weird. They are capable of immense, sudden destruction, even to themselves. They will sometimes break and shatter the land and the trees without cause or reason. So you can't trust them all, or all the time. But these two, they are kind. They are friendly."
 
-The weasel, Hugin, approached the human, making soft, reassuring sounds. "They won't harm you. You may come closer."
+The weasel, Hugin, approached the long-haired head, making soft, reassuring sounds. "They won't harm you. You may come closer."
 
 The fox brothers were not happy. Niran and Koorli were tense, ready to flee. But {{qk.characterName}}’s fascination was too strong. She had to see them up close, had to feel the strange magic that allowed this impossible friendship to exist. She ignored her brothers' nervous whimpers and began to move forward, Hugin the weasel trotting beside her. Warra, after a moment of painful hesitation, followed. The two larger foxes watched, their orange eyes calm, while the remaining sibling, Koorli, scurried to keep up, his small body a twitching bundle of fear.
 
 The long-haired head, seeing her, made a high-pitched sound of delight. "Ooh ba doo, Miriam! Flibba zee disss! Whooza blarn fif you? A lil’ kokka! So squibby cutte! Miriam, zib zib! You gotta zee disss! And whazzat? Mo fokkies? Kej Kej, zib zib! I bringy foodoo!"
 
-The humans offered them some soft, green leaves. {{qk.characterName}} slowly, cautiously, approached. The leaf smelled of pure forest, of earth and life. She took it, her paws brushing against the human's long, pale fingers. It was so unlike anything she had ever felt. She nibbled at the leaf, and a wave of exquisite, earthy sweetness exploded on her tongue. It was the most delicious thing she had ever tasted.
+The long-haired heads offered them some soft, green leaves. {{qk.characterName}} slowly, cautiously, approached. The leaf smelled of pure forest, of earth and life. She took it, her paws brushing against the long-haired head's long, pale fingers. It was so unlike anything she had ever felt. She nibbled at the leaf, and a wave of exquisite, earthy sweetness exploded on her tongue. It was the most delicious thing she had ever tasted.
 
-But then, one of the humans reached out to pet her head. It was a gesture of affection, she knew, but its suddenness, its overwhelming sense of intrusion, was too much. A primal panic seized her. All of her carefully cultivated bravery shattered. She and her brothers instantly spun and fled, a blur of grey and red fur, back into the deep, welcoming shadows of the trees.
+But then, one of the long-haired heads reached out to pet her head. It was a gesture of affection, she knew, but its suddenness, its overwhelming sense of intrusion, was too much. A primal panic seized her. All of her carefully cultivated bravery shattered. She and her brothers instantly spun and fled, a blur of grey and red fur, back into the deep, welcoming shadows of the trees.
 
 The Red Fur army located them again. They found them, a panting, trembling knot of fear and awe, a safe distance from the Koras.
 
@@ -52,5 +52,5 @@ The Red Fur army located them again. They found them, a panting, trembling knot 
 
 {{qk.characterName}} looked at her brother Warra, then at Alaric. She was still terrified, but her mind was reeling. They had found the Canises and the Crocodiles, but she had just found a new, even more compelling mystery. She could go with the Red Fur army and learn of their ways, or she could try to understand these strange, friendly creatures who spoke in emotions and shared their food.
 
-[Continue with the Red Fur army](9999-tbc)
+[Continue with the Red Fur army](0ba0-into-the-camp)
 [Return to the long-haired heads](9999-tbc)
