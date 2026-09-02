@@ -39,17 +39,35 @@ She grew faster. Lighter. Quicker.
 
 Kevin began to test her.
 
-He darted behind a tree and vanished. She chased him, but Kelvin suddenly appeared instead, grinning, blocking her path. She spun, confused, and Kevin slipped past her from the opposite side. She lunged again — Kelvin replaced him. They swapped places effortlessly, moving like mirrored ghosts.
+At first, it was simple — a dart behind a tree, a sudden shift in direction, a quick feint that made her paws skid on the moss. {{qk.characterName}} chased him eagerly, heart racing, her new senses humming with every step.
 
-She never caught either of them.
+Then the lesson changed.
 
-Her frustration grew, but so did her determination. She pushed harder, senses sharp, breath steady. And then — she felt it. A tiny ripple in the ground. A faint pull to her left. A whisper of movement that didn’t match the forest’s rhythm.
+Kevin bolted forward and, in the blink of an eye, appeared far ahead — far too far. She gasped, confused, but sprinted after him. Just as she closed the distance, he flickered out of sight and reappeared on her right, slipping between two ferns like a shadow with its own mind.
+
+She spun, breath sharp.
+That wasn’t possible. Not even for him.
+
+She lunged again — and Kevin was suddenly behind her.
+She turned — and he was on the opposite side.
+
+It made no sense.
+He was everywhere and nowhere, always just out of reach.
+
+Her frustration rose, but so did her determination. She steadied her breath, sharpened her focus, and let the forest’s rhythm settle around her. And then — she felt it. A tiny ripple beneath her paws. A faint pull to her left. A whisper of movement that didn’t belong to Kevin at all.
 
 She turned sharply.
 
-A hidden path opened before her — impossibly short, almost like a single step stretched into a full run. She dashed through it, heart pounding, and burst out behind Kevin and Kelvin just as they swapped again.
+A hidden path opened — impossibly short, like a single heartbeat stretched into a full sprint. She dashed through it, paws barely touching the ground, and burst out behind the two figures just as they swapped again.
 
-She collided with both of them.
+Only now she saw it clearly:
+
+There were two snow‑foxes.
+
+Kevin in front.
+Kelvin behind him — grinning, delighted, clearly having joined the lesson long ago.
+
+She collided with both of them in one unstoppable leap.
 
 Not hard — just enough to tumble into their fur, her face brushing against their chests. Their scents overwhelmed her: Kevin’s cool, crisp, winter‑sharp; Kelvin’s warm, bright, sun‑soft. Her crimson line blazed so fiercely she felt heat radiate along her spine.
 
@@ -101,9 +119,16 @@ The forest run narrowed until it became a thin, winding trail. Kelvin stopped. �
 
 They practised disappearing into the forest, blending with roots and shadows. {{qk.characterName}} climbed a steep, muddy-rocky rise, curious about a strange pull she felt at its peak.
 
-At the top, she saw it.
+At the top, something shimmered into being.
 
-A hole. A tunnel. Dark, deep, wrong. The path leading into it stretched unnaturally far, like an endless loop.
+Not a hole — not at first.
+It was a fold in the forest’s breath, a place where the ground seemed to hesitate, then stretch, then curl back on itself. Only because of her new training did {{qk.characterName}} notice it at all; the path wasn’t visible, it was felt, tugging at her whiskers, humming beneath her paws.
+
+She blinked, and the fold sharpened.
+
+A tunnel revealed itself — dark, deep, impossibly long — yet it wasn’t the darkness that made her heart leap. It was the way the path inside it bent, stretched, spiralled, as if the forest were whispering come see what lies beyond. The distance looked wrong, looping back on itself like a river trying to swallow its own tail.
+
+And instead of fear, she felt a spark of wild excitement.
 
 Her fur prickled.
 
