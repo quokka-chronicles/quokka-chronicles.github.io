@@ -1,0 +1,18 @@
+@[Quokka-Chronicles](0000-quokka-chronicles) > [The Shifting Hunters](0000-quokka-chronicles) > [The Fungal Veil](0002-the-fungal-veil)
+# Úkryt
+
+Svet sa obrátil naruby v znepokojivom, žalúdok skrúcajúcom trhnutí. Ešte pred okamihom bol joey zabalený v známej teplote matkinho vaku — vzápätí sa rútil, malý, bezmocný chumáčik srsti, cez studený vzduch. Dopadol s mäkkým, vlhkým plesknutím — nie na pevný lesný podklad, ale do zhluku zvláštnych, guľovitých výrastkov, ktoré pulzovali slabým, vnútorným svetlom.
+
+Boli to Glow-Caps, bežný jav v hlbších, vlhkejších častiach krovia. Pri vyrušení uvoľňovali jemnú, trblietavú hmlu — zvláštnu, zemito sladkastú vôňu, ktorá sa často držala vo vzduchu po silnej rose. No keď sa do nich vtlačila drobná váha joeyho, Glow-Caps zareagovali s intenzitou, akú ešte nikdy neprejavili. Hustý oblak sladkasto voňajúceho dymu vybuchol smerom priamo nahor, zachytil slabé mesačné svetlo a víril sa v neprirodzene tekutej žiare. Vôňa, zvyčajne nenápadná, teraz zaplavila jeho malé nozdry — dezorientujúci parfum, z ktorého sa mu zatočila hlava.
+
+Jeho prenikavé, vystrašené výkriky — zo strachu a opustenia — pokračovali ešte niekoľko zúfalých úderov srdca. Potom však nad svetielkujúcimi hubami padol tieň. Hučanie sa vrátilo — bližšie, hlbšie — vibrovalo cez samotnú zem. Joey reflexívne stuhol, kňučanie mu uviazlo v hrdle. Bol príliš maličký, príliš skoro na to, aby chápal prečo — no prastarý inštinkt, ostrejší než akékoľvek naučené pravidlo, prikázal ticho.
+
+Žiariace oči Canisa sa objavili na okraji hubového záhonu, prerážajúc víriaci, svetielkujúci dym. Zvláštna vôňa, oslňujúca žiara a dezorientujúca hmla z Glow-Caps akoby narúšali už aj tak pokrivené zmysly prelínača. Jeho hlava sa naklonila, žiariace oči kmitali, neschopné zaostriť. Tá známa, desivá prítomnosť, ktorá predtým akoby skladala samotný priestor, teraz pôsobila zmätene — akoby nedokázala vnímať malé stvorenie ukryté v chaotickom zmyslovom preťažení. Dym nielenže zakrýval — akoby posúval samotné vnímanie priestoru pre predátora, robil joeyho neviditeľným.
+
+Nízke, frustrované zavrčanie sa ozvalo z hrude Canisa — zvuk zmätku, nie okamžitej hrozby. Obchádzal svetielkujúci záhon, jeho pohyby stále neprirodzene plynulé, no váhavé. Vedúci Canis, oči zúžené do žiarivých štrbín, akoby cítil prítomnosť joeyho v trblietavom chaose. Vrhol sa dopredu, zaryl pazúr do najbližšieho zhluku Glow-Caps. Vytrysklo ešte viac dymu — hustejšieho, jasnejšieho — priamo do jeho tváre. Svetlo, už aj tak dezorientujúce, sa zintenzívnilo a pálilo jeho skreslené videnie. Canis odskočil s ostrým výkrikom, podráždene potriasol hlavou.
+
+Zachytil vzduch, nozdry sa mu rozšírili — ale prenikavá, sladko-zemitá vôňa Glow-Caps akoby rozbila akúkoľvek stopu, ktorú joey mohol zanechať. Slabé svetlo húb namiesto odhalenia vytváralo závratnú spleť posúvajúcich sa tieňov a falošných obrysov. Po niekoľkých mučivých sekundách Canis vydal posledné, frustrované zakňučanie, jeho žiariace oči ešte raz prebehli po záhone — a potom sa jeho prítomnosť rozplynula späť do hlbších tieňov. Jednoducho zmizol.
+
+Na miesto sa zieslo ticho, prerušované len slabým, rytmickým pulzovaním Glow-Caps a drobným, splašeným tlkotom joeyho srdca. Osamotený, dezorientovaný z pretrvávajúceho dymu a zvláštnej sladkej vône, joey ležal bez pohnutia, jeho malé telo sa triaslo — spomienka na tie neprirodzené, žiariace oči sa mu vypálila do začínajúceho vedomia. Bol v bezpečí — zatiaľ — no úplne sám v svete, ktorý sa zrazu stal obrovským a desivým.
+
+[Ďalšia kapitola](0003-the-embrace)
