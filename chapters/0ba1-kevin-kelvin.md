@@ -131,4 +131,4 @@ And {{qk.characterName}} realised something terrifying and wonderful:
 She was drawn to Kevin in a way she couldn’t explain.
 And Kevin… noticed her.
 
-[Next chapter](9999-tbc)
+[Next chapter](0ba2-hidden-paths)
