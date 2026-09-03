@@ -384,3 +384,101 @@ aside#lingua-panel button[data-lang]:hover {
 aside#lingua-panel button[data-lang]:active {
     background-color: var(--secondary-base);
 }
+aside#lingua-panel button[data-lang].is-active {
+    background-color: var(--secondary-base);
+}
+
+/* ==========================================
+   MODAL: ABOUT / PROVENANCE PANEL (Modern CV Style)
+   ========================================== */
+
+/* CV Header / Title */
+#about-panel p[data-i18n="provenance_title"] {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--secondary-base);
+    border-bottom: 1px solid var(--control-lines);
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* CV Body / Bio */
+#about-panel p[data-i18n="provenance_body"] {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--reading-text);
+    text-align: left;
+    font-weight: 300;
+}
+
+/* CV Contact / Footer line */
+#about-panel p[data-i18n="provenance_contact"] {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary-effect);
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--control-lines);
+    text-align: left;
+}
+
+
+/* ==========================================
+   MODAL: CODEX / PREFERENCES PANEL (Structured Grid Style)
+   ========================================== */
+
+#preferences-panel h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--secondary-base);
+    border-bottom: 1px solid var(--control-lines);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Container mapping for variable/codex items */
+#preferences-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+/* Individual preference / custom variable row */
+#preferences-list p {
+    background-color: var(--control-background);
+    border-left: 3px solid var(--secondary-base);
+    padding: 0.85rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--reading-text);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+#preferences-list p strong {
+    padding-right: 1rem;
+}
+
+#preferences-list p:hover {
+    border-left-color: var(--secondary-effect);
+}
+
+#preferences-list strong {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary-base);
+}

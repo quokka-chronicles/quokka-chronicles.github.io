@@ -1,71 +1,211 @@
 var qk = qk || {};
 
-
 console.info('%cWelcome to Quokka-Chronicles', `font-size:18px;color:maroon;`)
-console.log(qk);
 
-qk.Version = "0.2.0";
+qk.Version = "0.3.0";
 
+document.addEventListener('DOMContentLoaded', async () => {
+    await qk.i18nModule.init();
+    console.dir(qk, { depth: null });
+});
+
+/**
+ * @namespace qk.Preferen
+ * 0ces
+ * @description
+ * Centralized preference manager for the Quokka engine.
+ * Handles:
+ *  - loading/saving preferences to cookies
+ *  - storing engine state (theme, chapter, language)
+ *  - storing custom variables from narrative pathways
+ *  - dispatching change events
+ *  - providing safe accessors and utilities
+ */
 qk.Preferences = (me => {
-    const prefs = {        
-        theme: "light-theme",
-        chapter: "0000-quokka-chronicles",
-        characterName: null,
-        lang: "en", // <--- 1. Add default language preference
-    };
+    "use strict";
 
-    const COOKIE_NAME = 'qk';
+    /** @constant {string} */
+    const COOKIE_NAME = "qk";
+
+    /** @constant {number} Days the cookie remains valid */
     const COOKIE_AGE_DAYS = 7;
 
-    function _setCookie() {
-        let c = `${COOKIE_NAME}=${_stringifyPrefs()}; Max-Age=${3600 * 24 * COOKIE_AGE_DAYS}; path=/; SameSite=Lax`;
-        document.cookie = c;
-        console.log(`Cookie set: ${c}`);
-    }
+    /**
+     * Internal preference store.
+     * @private
+     * @type {Object}
+     */
+    let prefs = {
+        theme: "light-theme",
+        chapter: "0000-quokka-chronicles",
+        lang: "en",
+        previousChapter: null,
 
+        /**
+         * Custom variables extracted from .md narrative pathways.
+         * Stored separately to avoid mixing engine preferences with story state.
+         * @type {Object<string, string>|null}
+         */
+        customVariables: null
+    };
+
+    // ---------------------------------------------------------------------
+    // Cookie Handling
+    // ---------------------------------------------------------------------
+
+    /**
+     * Serializes the preference object into a URI‑encoded JSON string.
+     * @private
+     * @returns {string} Encoded JSON string.
+     */
     function _stringifyPrefs() {
         return encodeURIComponent(JSON.stringify(prefs));
     }
 
-    function _getCookie() {
-        let match = document.cookie.match(/qk=(?<cookie>[^;$]*)/);
-        let json = (match && match.groups && match.groups.cookie !== undefined) ? match.groups.cookie : null;
-        if (json)            
-        {
-            json = decodeURIComponent(json);
-            console.log(`Cookie found: ${json}`);
-            let cookie = {};
-            try {
-                cookie = JSON.parse(json);
-            } catch (e) {
-                console.info('No cookie', document.cookie);
-            }
-            prefs.theme = cookie?.theme || prefs.theme;
-            prefs.chapter = cookie?.chapter || prefs.chapter;
-            prefs.characterName = cookie?.characterName || prefs.characterName;
-            prefs.lang = cookie?.lang || prefs.lang;
+    /**
+     * Writes the current preferences into a browser cookie.
+     * @private
+     */
+    function _setCookie() {
+        const cookieValue =
+            `${COOKIE_NAME}=${_stringifyPrefs()}; ` +
+            `Max-Age=${3600 * 24 * COOKIE_AGE_DAYS}; path=/; SameSite=Lax`;
+
+        document.cookie = cookieValue;
+        console.log(`Cookie set: ${cookieValue}`);
+    }
+
+    /**
+     * Loads preferences from the cookie and merges them into the internal store.
+     * Ensures customVariables is always an object after load.
+     * @private
+     */
+    function _loadCookie() {
+        const match = document.cookie.match(new RegExp(`${COOKIE_NAME}=([^;]+)`));
+        const encoded = match ? match[1] : null;
+
+        if (!encoded) {
+            console.info("No preference cookie found.");
+            prefs.customVariables = {}; // initialize empty
+            return;
+        }
+
+        try {
+            const decoded = decodeURIComponent(encoded);
+            console.log(`Cookie found: ${decoded}`);
+
+            const cookie = JSON.parse(decoded);
+
+            // Merge cookie values safely
+            prefs.theme = cookie.theme ?? prefs.theme;
+            prefs.chapter = cookie.chapter ?? prefs.chapter;
+            prefs.lang = cookie.lang ?? prefs.lang;
+            prefs.previousChapter = cookie.previousChapter ?? prefs.previousChapter;
+
+            // FIX: preserve customVariables from cookie
+            prefs.customVariables = cookie.customVariables ?? {};
+
+        } catch (err) {
+            console.warn("Failed to parse preference cookie, using defaults.", err);
+            prefs.customVariables = {};
         }
     }
 
+    /**
+     * Deletes the preference cookie immediately.
+     * @private
+     */
     function _deleteCookie() {
-        document.cookie(`${COOKIE_NAME}=; Max-Age=1;`);
-        console.log("COOKIE Deleted:", document.cookie)
+        document.cookie = `${COOKIE_NAME}=; Max-Age=1; path=/;`;
+        console.log("Cookie deleted.");
     }
 
-    _getCookie();
+    // Load cookie immediately on module creation
+    _loadCookie();
+
+    // ---------------------------------------------------------------------
+    // Public API
+    // ---------------------------------------------------------------------
 
     return {
-        get: (key) => {
+
+        /**
+         * Retrieves a preference value by key.
+         * @param {string} key - Preference key.
+         * @returns {*} Stored value.
+         */
+        get(key) {
             return prefs[key];
         },
-        set: (key, value) => {
+
+        /**
+         * Sets a preference value and persists it.
+         * Dispatches a `qk:preferencesChanged` event.
+         * @param {string} key - Preference key.
+         * @param {*} value - New value.
+         */
+        set(key, value) {
             prefs[key] = value;
             _setCookie();
+            window.dispatchEvent(new CustomEvent("qk:preferencesChanged"));
         },
-        load: _getCookie,
-        delete: _deleteCookie
-    }
-})(qk);
+
+        /**
+         * Stores a custom variable (from narrative pathways).
+         * Ensures customVariables is always an object.
+         * @param {string} key - Variable name.
+         * @param {string} value - Variable value.
+         */
+        setCustom(key, value) {
+            if (!prefs.customVariables) prefs.customVariables = {};
+            prefs.customVariables[key] = value;
+
+            _setCookie();
+            window.dispatchEvent(new CustomEvent("qk:preferencesChanged"));
+        },
+
+        /**
+         * Retrieves a specific custom variable safely.
+         * @param {string} key - Variable name.
+         * @returns {string|null} Stored value or null if not found.
+         */
+        getCustom(key) {
+            if (!prefs.customVariables) return null;
+            return prefs.customVariables[key] ?? null;
+        },
+
+        clearCustom() {
+            prefs.customVariables = {};
+            _setCookie();
+            window.dispatchEvent(new CustomEvent("qk:preferencesChanged"));
+        },
+
+        /**
+         * Reloads preferences from the cookie.
+         * Useful for debugging or forced sync.
+         */
+        load() {
+            _loadCookie();
+        },
+
+        /**
+         * Deletes the preference cookie.
+         */
+        delete() {
+            _deleteCookie();
+        },
+
+        /**
+         * Returns a shallow copy of the entire preference store.
+         * @returns {Object} Copy of preferences.
+         */
+        dump() {
+            return { ...prefs };
+        }
+    };
+
+})(window.qk || {});
+
 
 qk.Modal = (me => {
     const CLASSNAME_ACTIVE = 'is-active';
@@ -102,6 +242,8 @@ qk.Modal = (me => {
     })
 
     function _open(e) {
+        e.stopPropagation(); // ⬅️ prevents bubbling to document
+
         _closeAll();
         const panel = Panels[e.target.dataset.showPanelId];
         panel.classList.add(CLASSNAME_ACTIVE);
@@ -115,6 +257,27 @@ qk.Modal = (me => {
         openedPanels.length = 0;
     }
 
+    // Close modal on ESC
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+            _closeAll();
+        }
+    });
+
+    // Close modal when clicking outside the panel
+    document.addEventListener('click', e => {
+        const anyOpen = openedPanels.length > 0;
+        console.log("DOKUMENT-CLICK | openedPanels", openedPanels)
+        if (!anyOpen) return;
+
+        // If click is NOT inside any opened panel → close
+        const clickedInside = openedPanels.some(panel => panel.contains(e.target));
+        console.log("DOKUMENT-CLICK | clickedInside", openedPanels)
+        if (!clickedInside) {
+            _closeAll();
+        }
+    });
+
     return {
         panels: () => Panels,
         opened: () => openedPanels,
@@ -123,18 +286,86 @@ qk.Modal = (me => {
 
 })(qk);
 
+qk.PreferencesModal = (me => {
+    const list = document.getElementById('preferences-list');
+
+    function _render() {
+        const prefs = me.Preferences.dump(); // we will add this method below
+
+        list.innerHTML = Object.entries(prefs)
+            .map(([key, value]) => `<p><strong>${toDisplayName(key)}</strong>: ${value}</p>`)
+            .join('');
+    }
+
+    function toDisplayName(key) {
+        return key
+            .replace(/([a-z])([A-Z0-9])/g, '$1 $2')
+            .replace(/^./, m => m.toUpperCase());
+    }
+
+    // Re-render whenever preferences change
+    window.addEventListener('qk:preferencesChanged', _render);
+
+    return {
+        render: _render
+    };
+})(qk);
+
 qk.Theme = (me => {
-    // --- Private Variables ---
+    "use strict";
+
+    // ==========================================
+    // SETTINGS
+    // ==========================================
+    const SETTINGS = {
+        storageKey: 'theme'
+    };
+
     const body = document.body;
-    const ARIAL_LABEL_DARK = 'Switch to light theme';
-    const ARIAL_LABEL_LIGHT = 'Switch to dark theme';
     const themeButton = document.getElementById('btn-theme');
     let currentTheme;
-    
+
+    // ==========================================
+    // HELPERS (Private)
+    // ==========================================
+
     function _isDarkTheme() {
         return body.classList.contains(Theme.dark);
     } 
+
+    function _applyThemeImages() {
+        const query = 'img[data-light-src][data-dark-src]';
+        document.querySelectorAll(query).forEach(img => {
+            img.src = currentTheme === Theme.dark ? img.dataset.darkSrc : img.dataset.lightSrc;
+        });
+    }
+     
+    function _toggleButtonText() {
+        if (!themeButton) return;
+        const isDark = _isDarkTheme();
         
+        // Fetch translated words dynamically, falling back to custom HTML attributes
+        const darkWord = me.i18nModule?.get('theme_dark_word') || themeButton.dataset.darkWord || 'Nocturne';
+        const lightWord = me.i18nModule?.get('theme_light_word') || themeButton.dataset.lightWord || 'Illumine';
+        
+        const ariaDark = me.i18nModule?.get('aria_theme_dark') || themeButton.getAttribute('data-fallback-aria-dark') || 'Switch to light theme';
+        const ariaLight = me.i18nModule?.get('aria_theme_light') || themeButton.getAttribute('data-fallback-aria-light') || 'Switch to dark theme';
+
+        themeButton.textContent = isDark ? darkWord : lightWord;
+        themeButton.setAttribute('aria-label', isDark ? ariaDark : ariaLight);
+    }
+
+    function _applyTheme(theme) {
+        body.className = '';
+        body.classList.add(theme);
+        currentTheme = theme;
+        _applyThemeImages();
+        _toggleButtonText();
+    }
+
+    // ==========================================
+    // THEME OBJECT & INITIALIZATION
+    // ==========================================
     const Theme = {
         dark: 'dark-theme',
         light: 'light-theme',
@@ -143,56 +374,45 @@ qk.Theme = (me => {
         },
         set(theme) {
             if (!this.verified(theme)) return;
-            _applyTheme(theme)
-            me.Preferences?.set('theme', theme);
-            console.log(`Theme set to: ${theme}`, document.cookie);
+            _applyTheme(theme);
+            me.Preferences?.set(SETTINGS.storageKey, theme);
         },
+    };
+
+    let preferredTheme = me.Preferences?.get(SETTINGS.storageKey);
+    if (!Theme.verified(preferredTheme)) {
+        preferredTheme = Theme.light;
     }
+    
+    _applyTheme(preferredTheme);
 
-    function _applyTheme(theme)
-    {
-        body.className = '';
-        body.classList.add(theme);
-        themeButton.setAttribute('aria-label', this.dark === theme ? ARIAL_LABEL_DARK : ARIAL_LABEL_LIGHT);
-        currentTheme = theme;
-        _applyThemeImages();
-        _toggleButtonText();
-    }
-
-    let preferredTheme = me.Preferences?.get('theme');
-    Theme.verified(preferredTheme) && _applyTheme(preferredTheme);
-
-    function _applyThemeImages() {
-        const query = 'img[data-light-src][data-dark-src]';
-        document.querySelectorAll(query).forEach(img => {
-            img.src = currentTheme ? img.dataset.darkSrc : img.dataset.lightSrc;
+    if (themeButton) {
+        themeButton.addEventListener('click', () => {
+            Theme.set(_isDarkTheme() ? Theme.light : Theme.dark);
         });
     }
 
-    function _toggleButtonText() {
-        const d = themeButton.dataset;
-        themeButton.textContent = !_isDarkTheme() ? d.darkWord : d.lightWord;
-    }
-
-    function _toggleTheme() {
-        Theme.set(_isDarkTheme() ? Theme.light : Theme.dark);
-    }
-
-    currentTheme = _isDarkTheme() ? Theme.dark : Theme.light;
-    _applyThemeImages();
-    themeButton.addEventListener('click', _toggleTheme);
+    // Listen to global language changes to re-render theme button text in new language
+    window.addEventListener('qk:languageChanged', () => {
+        _toggleButtonText();
+    });
 
     return {
         get current() {
             return currentTheme;
         },
-        set: (theme) => {
-                Theme.set(theme);
+        set(theme) {
+            Theme.set(theme);
         },
-    }
+        refreshText() {
+            _toggleButtonText();
+        }
+    };
 })(qk);
 
 qk.Chapter = (me => {
+    "use strict";
+
     const DIVIDER_MAXLENGTH = 10;
     const ContentType = {
         path: 'path',
@@ -204,6 +424,8 @@ qk.Chapter = (me => {
     }
     const panel = document.getElementById('reading-panel');
     const narr = document.querySelector('#narratives-panel .modal-content');
+
+    let currentChapterData = null;
 
     /**
      * Fetches the XML content from the specified filename.
@@ -254,6 +476,7 @@ qk.Chapter = (me => {
     function _parseChapter(lines = []) {
         const chapter = {
             pathlog: '',
+            path: [],
             content: [],
             pathways: [],
             endnotes:[],
@@ -267,7 +490,8 @@ qk.Chapter = (me => {
             // Rule 1: First item, starts with "@"
             if (index === 0 && trimmed.startsWith("@")) {
                 chapter.pathlog = trimmed.slice(1).trim();
-            return;
+                chapter.path = _parsePathlog(chapter.pathlog);
+                return;
             }
 
             // Rule 2: Starts with "#"
@@ -304,6 +528,12 @@ qk.Chapter = (me => {
             const match = trimmed.match(pathwayRegex);
             if (match) {
                 let target = match[2].trim(); 
+                
+                // <--- 3. Resolve __PREVIOUS__ dynamically
+                if (target === "__PREVIOUS__") {
+                    target = me.Preferences.get('previousChapter') || "0000-quokka-chronicles";
+                }
+
                 const vars = {};
                 if (target.includes("?") && target.includes("=")) {
                     const parsedVar = target.match(/^(?<target>[^?]+)\?(?<variableName>[^=]+)=(?<value>[^$]+)$/);
@@ -357,6 +587,41 @@ qk.Chapter = (me => {
         });
     }
 
+/**
+     * Replaces any {{qk.variableName}} placeholders in a string
+     * with values from custom variables, falling back to an empty string.
+     * Used for both narrative text paragraphs and pathlogs.
+     */
+    function _interpolateText(text) {
+        if (typeof text !== 'string') return '';
+        
+        return text.replace(/\{\{qk\.([^\}]+)\}\}/g, (match, varName) => {
+            const value = me.Preferences.getCustom(varName);
+            // Handle null, undefined, or empty values gracefully
+            return (value !== null && value !== undefined) ? value : '';
+        });
+    }
+
+    function _parsePathlog(pathlogString) {
+        if (typeof pathlogString !== 'string' || pathlogString.trim() === '') {
+            return [];
+        }
+        const chapterRegex = /^\[([^\]]+)\]\(([^)]+)\)$/;
+        
+        const interpolated = _interpolateText(pathlogString);
+        const items = interpolated.split('>');
+        
+        const chapterNames = [];
+        items.forEach(item => {
+            const trimmedItem = item.trim();
+            const match = trimmedItem.match(chapterRegex);
+            if (match) {
+                chapterNames.push(match[2].trim());
+            }
+        });
+        return chapterNames;
+    }
+
     /**
      * Parses a string representing a chapter's pathlog and generates the corresponding HTML.
      * The string is split by the ">" character. Each item is then parsed to determine
@@ -368,46 +633,37 @@ qk.Chapter = (me => {
      * `<div>` tags for selections, separated by dividers.
      */
     function _parsePathlogToHTML(pathlogString) {
-        // Return an empty string if the input is not a valid string.
         if (typeof pathlogString !== 'string' || pathlogString.trim() === '') {
             return '';
         }
 
-        // Regex to match the [Chapter title](filename) format.
         const chapterRegex = /^\[([^\]]+)\]\(([^)]+)\)$/;
-        
-        // Regex to match the [Selection] format.
         const selectionRegex = /^\[([^\]]+)\]$/;
         
-        // Split the string by the ">" delimiter to get an array of items.
-        const items = pathlogString.replace(/\{\{qk\.characterName\}\}/g, me.Preferences.get('characterName')).split('>');
+        const interpolated = _interpolateText(pathlogString);
+        const items = interpolated.split('>');
         
-        // Use map to process each item and build an array of HTML snippets.
         const htmlSnippets = items.map(item => {
             const trimmedItem = item.trim();
             
-            // Check for a chapter title match.
             const chapterMatch = trimmedItem.match(chapterRegex);
             if (chapterMatch) {
-            const title = chapterMatch[1].trim();
-            const filename = chapterMatch[2].trim();
-            // Use the filename for href, and the title for the link text.
-            return `<button class="chapter-title" data-target="${filename}" target="_self">${title}</button>`;
+                const title = chapterMatch[1].trim();
+                const filename = chapterMatch[2].trim();
+                return `<button class="chapter-title" data-target="${filename}" target="_self">${title}</button>`;
             }
             
-            // Check for a selection match.
             const selectionMatch = trimmedItem.match(selectionRegex);
             if (selectionMatch) {
-            const selectionText = selectionMatch[1].trim();
-            // Use a div for the selection text.
-            return `<div class="selection">${selectionText}</div>`;
+                const selectionText = selectionMatch[1].trim();
+                // If the variable wasn't set yet, the selection tag becomes empty and gets filtered out
+                if (!selectionText) return '';
+                return `<div class="selection">${selectionText}</div>`;
             }
             
-            // If no match is found, return an empty string to be ignored.
             return '';
         });
         
-        // Filter out any empty strings from invalid items and join with the divider.
         return htmlSnippets.filter(snippet => snippet !== '').join('<div class="chapter-divider"></div>');
     }
 
@@ -428,16 +684,22 @@ qk.Chapter = (me => {
 
         _mergeContentByType(chapter.content).forEach(p => {
             switch(p.type) {
-                case ContentType.title: html += `<h1>${p.content}</h2>`; break;
-                case ContentType.emphasize: html += `<p><em>${p.content}</em></p>`; break;
-                case ContentType.divider: html += `<p class="divider">${p.content.repeat(p.length)}</p>`; break
+                case ContentType.title: 
+                    html += `<h1>${_interpolateText(p.content)}</h2>`; 
+                    break;
+                case ContentType.emphasize: 
+                    html += `<p><em>${_interpolateText(p.content)}</em></p>`; 
+                    break;
+                case ContentType.divider: 
+                    html += `<p class="divider">${p.content.repeat(p.length)}</p>`; 
+                    break;
                 default:
-                    let x = p.content
-                        .replace(/\[=(.)=\]/g, '<sup class="endnote">$1</sup>')
-                        .replace(/\{\{qk\.characterName\}\}/g, me.Preferences.get('characterName'));
+                    let x = _interpolateText(p.content)
+                        .replace(/\[=(.)=\]/g, '<sup class="endnote">$1</sup>');
                     html += `<p>${x}</p>`;
             }
         });
+        
         if (chapter.pathways.length) {
             html += '<nav>';
             chapter.pathways.forEach(pathway => {
@@ -523,12 +785,13 @@ qk.Chapter = (me => {
                 const filename = e.target.dataset.target || null;
                 const variable = e.target.dataset.variable || null;
                 const value = e.target.dataset.value || null;
+
+                // Save ANY variable
                 if (variable && value) {
-                    if (variable === "characterName") {
-                        me.Preferences.set('characterName', value);
-                        me.Character.start(value);
-                    }
+                    me.Preferences.setCustom(variable, value);
+                    me.CustomVariables.updateButton();
                 }
+
                 if (filename) {
                     _load(filename);
                 }
@@ -551,11 +814,25 @@ qk.Chapter = (me => {
 
     async function _load(filename) {
         filename = filename || me.Preferences.get('chapter');
+
+        const currentChapter = me.Preferences.get('chapter');
+        // Only update previousChapter if we aren't coming back from the TBC page
+        if (currentChapter && currentChapter !== filename && currentChapter !== '9999-tbc') {
+            me.Preferences.set('previousChapter', currentChapter);
+        }
+
         try {
             const f = await _fetch(`${filename}.md`);
             const lines = _getLines(f);
             const ch = _parseChapter(lines);
+            currentChapterData = _parseChapter(lines);
             console.log(ch);
+
+            // If the chapter has no path history, it's the root/first chapter
+            if (!ch.pathlog || ch.path.length < 2) {
+                me.Preferences.clearCustom();
+            }
+
             const html = _htmlize(ch);            
             panel.innerHTML = html;
             narr.innerHTML = _parsePathlogToHTML(ch.pathlog);
@@ -578,49 +855,127 @@ qk.Chapter = (me => {
     }
 
     return {
-        load: _load
+        load: _load,
+        path: () => currentChapterData ? currentChapterData.path : []
     }
 
 })(qk);
 
-qk.Character = (me => {
+qk.CustomVariables = (me => {
     "use strict";
-    const charButton = document.getElementById('btn-character') || document.createElement('button');
-    const charName = me.Preferences.get('characterName');
 
-    if (charName !== null && charName != "") {
-        _characterSet(charName);
+    const btn = document.getElementById('btn-custom-variables') 
+        || document.createElement('button');
+
+    btn.textContent = "Character";   // or "Variables", or "Profile"
+    btn.hidden = true;
+
+    function _updateButton() {
+        const vars = me.Preferences.get('customVariables');
+        const hasVars = vars && Object.keys(vars).length > 0;
+
+        btn.hidden = !hasVars;
     }
-    
-    function _characterSet(name) {
-        charButton.textContent = name;
-        charButton.hidden = false;
+
+    function _toDisplayName(key) {
+        return key
+            .replace(/([a-z])([A-Z0-9])/g, '$1 $2')
+            .replace(/^./, m => m.toUpperCase());
     }
+
+    function _renderModal() {
+        const list = document.getElementById('preferences-list');
+        const vars = me.Preferences.get('customVariables') || {};
+
+        list.innerHTML = Object.entries(vars)
+            .map(([key, value]) => {
+                const friendly = _toDisplayName(key);
+                return `<p><strong>${friendly} :</strong><span>${value}</span></p>`;
+            })
+            .join('');
+    }
+
+    // React to changes
+    window.addEventListener('qk:preferencesChanged', () => {
+        _updateButton();
+        _renderModal();
+    });
 
     return {
-        start: _characterSet
-    }
+        updateButton: _updateButton,
+        renderModal: _renderModal,
+        toDisplayName: _toDisplayName
+    };
+
 })(qk);
 
 qk.Language = (me => {
     "use strict";
+
+    // ==========================================
+    // SETTINGS
+    // ==========================================
+    const SETTINGS = {
+        defaultLang: 'en',
+        storageKey: 'lang'
+    };
+
     const panel = document.getElementById('lingua-panel');
     if (!panel) return {};
 
-    panel.querySelectorAll('button[data-lang]').forEach(btn => {
-        btn.addEventListener('click', e => {
+    const buttons = panel.querySelectorAll('button[data-lang]');
+
+    // ==========================================
+    // HELPERS (Private)
+    // ==========================================
+
+    /**
+     * Updates the visual active class on language selection buttons.
+     * @param {string} currentLang - The active language code.
+     */
+    function _updateActiveState(currentLang) {
+        buttons.forEach(btn => {
+            if (btn.dataset.lang === currentLang) {
+                btn.classList.add('is-active');
+            } else {
+                btn.classList.remove('is-active');
+            }
+        });
+    }
+
+    // ==========================================
+    // INITIALIZATION & EVENT LISTENERS
+    // ==========================================
+
+    // Initialize active state on page load
+    const initialLang = me.Preferences.get(SETTINGS.storageKey) || SETTINGS.defaultLang;
+    _updateActiveState(initialLang);
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', async e => {
             e.preventDefault();
             const selectedLang = e.target.dataset.lang;
+            const currentLang = me.Preferences.get(SETTINGS.storageKey);
             
-            if (selectedLang && selectedLang !== me.Preferences.get('lang')) {
+            if (selectedLang && selectedLang !== currentLang) {
                 // Save preference
-                me.Preferences.set('lang', selectedLang);
+                me.Preferences.set(SETTINGS.storageKey, selectedLang);                
+                
+                // Update button visual states
+                _updateActiveState(selectedLang);
                 
                 // Close the modal panel
                 me.Modal.closeAll();
                 
-                // Reload the current chapter using the new language folder
-                me.Chapter.load(me.Preferences.get('chapter'));
+                // 1. Update the UI strings translation file
+                if (me.i18nModule && typeof me.i18nModule.setLanguage === 'function') {
+                    await me.i18nModule.setLanguage(selectedLang);
+                }
+                
+                // 2. Reload the current chapter using the new language folder
+                if (me.Chapter && typeof me.Chapter.load === 'function') {
+                    me.Chapter.load(me.Preferences.get('chapter'));
+                }
             }
         });
     });
@@ -674,6 +1029,25 @@ qk.Tooltip = (me => {
         tooltipBox.classList.remove('visible');
         tooltipBox.classList.add("hidden");
     }
+
+    // Enable tooltip for any element with data-tooltip attribute
+    document.addEventListener('mouseover', e => {
+        const el = e.target.closest('[data-tooltip]');
+        if (!el) return;
+
+        const text = el.getAttribute('data-tooltip');
+        if (!text) return;
+
+        const rect = el.getBoundingClientRect();
+        qk.Tooltip.show(text, rect.top, rect.left);
+    });
+
+    document.addEventListener('mouseout', e => {
+        const el = e.target.closest('[data-tooltip]');
+        if (!el) return;
+
+        qk.Tooltip.hide();
+    });
 
     return {
         show: _show,

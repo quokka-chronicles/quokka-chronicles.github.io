@@ -19,7 +19,8 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Script-->
+    <!-- Scripts -->
+    <script src="./js/i18n.js" defer></script>
     <script src="./js/script.js" defer></script>
 </head>
 <body class="light-theme">
@@ -38,26 +39,34 @@
             
             <nav class="main-nav">
                 <span class="panel-nav">
-                    <button id="btn-narratives" class="menu-button" aria-label="Open or hide the list of stories" data-show-panel-id="narratives-panel">
+                    <button id="btn-narratives" data-i18n="nav_narratives" class="menu-button" aria-label="Open or hide the list of stories" data-show-panel-id="narratives-panel">
                         Narratives
                     </button>
-                    <button id="btn-theme" class="menu-button" aria-label="Toggle color theme" data-light-word="Illumine" data-dark-word="Nocturne">
+                    <button 
+                        id="btn-theme" 
+                        data-i18n="nav_nocturne" 
+                        data-i18n-attr="data-light-word:theme_dark_word" 
+                        class="menu-button" 
+                        aria-label="Toggle color theme" 
+                        data-light-word="Illumine" 
+                        data-dark-word="Nocturne"
+                    >
                         Nocturne
                     </button>
-                    <button id="btn-provenance" class="menu-button" aria-label="Show information about the project" data-show-panel-id="about-panel">
+                    <button id="btn-provenance" data-i18n="nav_provenance" class="menu-button" aria-label="Show information about the project" data-show-panel-id="about-panel">
                         Provenance
                     </button>
-                    <button id="btn-lingua" class="menu-button" aria-label="Swap language" data-show-panel-id="lingua-panel">
+                    <button id="btn-lingua" data-i18n="nav_lingua" class="menu-button" aria-label="Swap language" data-show-panel-id="lingua-panel">
                         Lingua
                     </button>
-                    <button id="btn-character" class="menu-button" hidden>
-                        {{qk.characterName}}
+                    <button id="btn-custom-variables" data-i18n="nav_character" class="menu-button" hidden data-show-panel-id="preferences-panel">
+                        Character
                     </button>
                 </span>
             </nav>
 
             <main id="reading-panel" class="scrollable-area">
-                <article class="chapter">
+                <article data-i18n="loading" class="chapter">
                     Loading, please wait...
                 </article>
             </main>
@@ -74,10 +83,15 @@
         <button data-lang="sk">SK</button>
     </aside>
 
+    <aside id="preferences-panel" class="modal-panel">
+        <h2 data-i18n="nav_character">Preferences</h2>
+        <div id="preferences-list"></div>
+    </aside>
+
     <footer id="about-panel" class="modal-panel">
-        Provenance
-        Quokka Chronicles is a personal portfolio project by Ramon,<br>designed to showcase modern front-end development<br>techniques with a focus on readability, accessibility, and minimalist design.
-        Contact: des@chello.com
+        <p data-i18n="provenance_title">Provenance</p>
+        <p data-i18n="provenance_body">Quokka Chronicles is a personal portfolio project by Ramon,<br>designed to showcase modern front-end development<br>techniques with a focus on readability, accessibility, and minimalist design.</p>
+        <p data-i18n="provenance_contact">Contact: des@chello.com</p>
     </footer>
 
 </body>

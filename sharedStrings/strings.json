@@ -1,0 +1,16 @@
+{
+  "nav_narratives": "Lore",
+  "nav_nocturne": "Nocturne",
+  "nav_illumine": "Illumine",
+  "nav_provenance": "Provenance",
+  "nav_lingua": "Lingua",
+  "nav_character": "Codex",
+  "loading": "Consulting the Archives…",
+  "provenance_title": "Provenance",
+  "provenance_body": "Quokka Chronicles is a curated portfolio by Ramon, crafted to explore contemporary front‑end design through clarity, accessibility, and minimalist composition.",
+  "provenance_contact": "Contact: des@chello.com",
+  "theme_dark_word": "Illumine",
+  "theme_light_word": "Nocturne",
+  "aria_theme_dark": "Invoke Illumine",
+  "aria_theme_light": "Enter Nocturne"
+}

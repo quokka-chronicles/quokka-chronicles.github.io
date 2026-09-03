@@ -1,0 +1,16 @@
+{
+  "nav_narratives": "Púť",
+  "nav_nocturne": "Deň",
+  "nav_illumine": "Noc",
+  "nav_provenance": "Skriptórium",
+  "nav_lingua": "Reč",
+  "nav_character": "Kódex",
+  "loading": "Archív sa otvára, prosím, zotrvajte…",
+  "provenance_title": "O projekte",
+  "provenance_body": "Quokka Chronicles je osobná zbierka Ramona, vytvorená ako kompendium moderného front-endu, založené na čitateľnosti, prístupnosti a minimalistickej estetike.",
+  "provenance_contact": "Kontakt: des@chello.com",
+  "theme_dark_word": "Deň",
+  "theme_light_word": "Noc",
+  "aria_theme_dark": "Privolať svetlo",
+  "aria_theme_light": "Ponoriť sa do tmy"
+}
