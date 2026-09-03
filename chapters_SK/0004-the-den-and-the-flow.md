@@ -1,5 +1,5 @@
 @[Quokka-Chronicles](0000-quokka-chronicles) > [The Shifting Hunters](0000-quokka-chronicles) > [The Fungal Veil](0002-the-fungal-veil) > [The Embrace](0003-the-embrace) > [The Den and the Flow](0004-the-den-and-the-flow)
-# Líščí brloh a potôčik
+# Líščia nora a potôčik
 Čas pre joeyho teraz plynul v upokojujúcom rytme tepla a objavovania. Studená, desivá noc jeho opustenia sa rozplynula do hmlistej, snovej spomienky, nahradená živým, radostným chaosom líščieho brlohu. Tu, hlboko v zemi, pod skrútenými koreňmi prastarého Eucalyptusu na slnkom posiatej stráni, bolo doma. Líščia matka, neustály zdroj nežných oliznutí a mäkkých ťuknutí nosom, vkladala svoju nekonečnú lásku do všetkých svojich mláďat — aj do malej quokky. Jej partner, múdry samec s hrdzavo-striebornou srsťou, bol tichou kotvou brlohu. Jeho hlboké, vínové oči, naplnené pokojom nespočetných sezón, dohliadali na všetkých — tichý prameň múdrosti a neochvejnej opory.
 
 Líščie mláďatá, hlučná trojica hrdzavej energie, rýchlo zabudli, že ich nový súrodenec je iný. Pre nich bolo malé sivé stvorenie jednoducho ďalším kamarátom na hranie — len s trochu zvláštnym hopkaním. Spoločne sa váľali v slnečných lúčoch, hravo zápasili v mäkkej hline a na denný spánok sa vždy zložili do teplej, dýchajúcej kopy, pričom joey bol vždy bezpečne uprostred.
