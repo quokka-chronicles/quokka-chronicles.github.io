@@ -47,7 +47,7 @@ Alaric paused to let them take it in.
 
 At a subtle click from one of the spiders, a massive web spun across a narrow gorge shimmered with an ultraviolet sheen. A stray leaf drifting toward it did not stick; instead, as it touched the filament, its trajectory violently snapped from a diagonal drift into a rigid, linear path.
 
-"Their threads anchor space," Alaric continued, watching the quokka's reaction closely. "When the shifting hunters try to use their impossible leaps through the folds, these webs catch the distortion. They strip the anomaly away, forcing the Mergers back into our three dimensions. Here, they can bleed just like anything else."
+"Their threads anchor space," Alaric continued, watching the quokka's reaction closely. "When the shifting hunters try to use their impossible leaps through the folds, these webs catch the distortion. They strip the anomaly away, force the Mergers to move the way all creatures must. Here, they can bleed just like anything else."
 
 One of the spiders lowered itself gracefully, its many eyes reflecting the siblings like tiny crimson mirrors. {{qk.characterName}} felt her back-line pulse faintly, as though recognising something in the creature’s presence.
 

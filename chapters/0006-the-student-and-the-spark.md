@@ -24,7 +24,5 @@ She returned to the den, her head still spinning with the offer. She told her br
 
 That evening, {{qk.characterName}} found her mother. She started with a simple question, “Mother, what is your name?” Her mother smiled gently, her eyes shining with endless love. “My name is Lira,” she said. “It means ‘song,’ and I was named for the song I sang to my partner when we first met. He was a wanderer then, but my song convinced him to stay.” Then, she listened to {{qk.characterName}}'s story, her conflict, and her heart. On one side, she loved her parents and brothers more than anything—this was her home. On the other, the opportunity to study the mysteries of the world was incredibly exciting for her. Her mother simply nudged her with a gentle paw. “My darling girl,” she whispered, “you were born to a world of magic. We and your brothers have given you all the tools you need for life. We have made you safe. Any choice you make is the right one, because it is your choice. We will be proud of you, no matter what path you take.”
 
-And now, the choice is yours to make.
-
 [Stay with the brothers](0b00-echoes-in-broken-lands)
 [Leave with the Quokka University](0a00-the-path-unfolds)
