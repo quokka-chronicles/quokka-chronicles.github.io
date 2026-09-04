@@ -1,5 +1,6 @@
-@[Quokka-Chronicles](0000-quokka-chronicles) > [The Shifting Hunters](0000-quokka-chronicles) > [The Fungal Veil](0002-the-fungal-veil) > [The Embrace](0003-the-embrace) > [The Den and the Flow](0004-the-den-and-the-flow) > [The Wind, the Listener, and the Namesless](0005-the-four-furr) > [{{qk.characterName}}] > [The Student and the Spark](0006-the-student-and-the-spark)
-# Študentka a iskra
+@[Quokka-Chronicles](0000-quokka-chronicles) > [Prelínači](0000-quokka-chronicles) > [Úkryt](0002-the-fungal-veil) > [Objatie](0003-the-embrace) > [Líščia nora a potôčik](0004-the-den-and-the-flow) > [O chlapcoch s menom a dievčati bez neho](0005-the-four-furr) > [{{qk.characterName}}] > [S iskrou v duši](0006-the-student-and-the-spark)
+# S iskrou v duši
+
 Od chvíle, keď Niran a Warra dostali svoje mená, ubehlo nespočetne veľa ročných období a súrodenci nadobro vyrástli z detských čias. Už to neboli bezbranné mláďatká, ale mladí dospelí. Ich puto bolo pevné ako prastaré stromy a vzájomné porozumenie hlboké ako skryté riečne prúdy. Svet, ktorý bol kedysi len ihriskom pre hry a chvíľkové strachy, sa premenil na zložitú tapisériu plnú úžasu i hrozieb. Nastal čas veľkých rozhodnutí — a pre {{qk.characterName}} sa svet zrazu zdal omnoho väčší než ich rodný brloh.
 
 Miesto, z ktorého im kedysi behal mráz po chrbte, sa premenilo na ich učebňu. Pre jej bratov — bystrého Nirana, múdreho Warraya a odvážneho Koorliho — bolo skalné bralo arénou, kde si merat sila a piliť umenie prežitia. Hodiny trávili stopovaním a zakrádaním, a staré skalné pukliny, čo ich predtým chránili pred nebezpečenstvom, teraz menili na vyhliadky, odkiaľ striehli na Canisov. Pre {{qk.characterName}} však toto miesto skrývalo omnoho hlbší, temnejší zmysel. Jej všímavá, nepokojná myseľ vnímala súvislosti, ktoré bratom zostávali skryté.
@@ -66,5 +67,5 @@ Matka sa k nej naklonila a jemne sa jej dotkla labkou.
 
 „Moja drahá,“ prehovorila ticho, no s pevnou istotou v hlase, „prišla si na tento svet opradený mágiou. My a tvoji bratia sme ti dali všetko, čo do života potrebuješ; ochránili sme ťa a ukázali ti cestu. No akékoľvek rozhodnutie dnes urobíš, bude správne — pretože bude iba tvoje. Nech si vyberieš ktorúkoľvek cestu, budeme na teba nekonečne hrdí.“
 
-[Stay with the brothers](0b00-echoes-in-broken-lands)
-[Leave with the Quokka University](0a00-the-path-unfolds)
+[Zostaň s bratmi](0b00-echoes-in-broken-lands)
+[Odíď s quokkami z akadémie](0a00-the-path-unfolds)
