@@ -1,5 +1,7 @@
 @[Quokka-Chronicles](0000-quokka-chronicles) > [Prelínači](0000-quokka-chronicles) > [Úkryt](0002-the-fungal-veil) > [Objatie](0003-the-embrace) > [Líščia nora a potôčik](0004-the-den-and-the-flow) > [O chlapcoch s menom a dievčati bez neho](0005-the-four-furr) > [{{qk.characterName}}] > [S iskrou v duši](0006-the-student-and-the-spark) [Zostaň s bratmi] > [Svetlo v rozbitom tieni](0b00-echoes-in-broken-lands) > [Červená armáda](0b01-broken-lands-2) > [Pridaj sa k červenej armáde] > [Tábor](0ba0-into-the-camp) > [Bratia zo snežných hôr](0ba1-kevin-kelvin)
-# Ranné svetlo sa rozlialo po tábore ako bledé zlato, jemné a chladné po nočnom lesnom mraze. {{qk.characterName}} sa zobudila skoro, jej karmínová línia na chrbte pulzovala v tichom rytme dychu. Warra sa vedľa nej natiahol, uši mu jemne zašvihali; Niran si hlasno zívol; Koorli sa vykotúľal zo svojho machového lôžka v ospalom kotrmelci.
+# Snežní bratia
+
+Ranné svetlo sa rozlialo po tábore ako bledé zlato, jemné a chladné po nočnom lesnom mraze. {{qk.characterName}} sa zobudila skoro, jej karmínová línia na chrbte pulzovala v tichom rytme dychu. Warra sa vedľa nej natiahol, uši mu jemne zašvihali; Niran si hlasno zívol; Koorli sa vykotúľal zo svojho machového lôžka v ospalom kotrmelci.
 
 „Vodopád?“ navrhol Niran.
 
