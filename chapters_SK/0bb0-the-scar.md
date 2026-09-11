@@ -15,7 +15,7 @@ Cesta späť bola desivou hmlou. Kelvin nebežal po bežných lesných chodníko
 
 Keď vtrhli do spiaceho centra červenej armády, polnočný tábor bol hrobovo tichý.
 
-Koorli sa bezhlavo rútil k ich nore a vtrhol hlavou vpred do hliny. „Warra! Niran! {{qk.characterName}} — Kelvin — diera — spadli — preč — preč —“ kvílil, jeho hlas bol len zmesou panických, zadýchaných čkaní a vzlykov. „Je preč — zem ju zjedla — Kelvin spadol — {{qk.characterName}} sa prepadla do noci!“
+Koorli sa bezhlavo rútil k ich nore a vtrhol hlavou vpred do hliny. „Warra! Niran! {{qk.characterName}} — Kevin — diera — spadli — preč — preč —“ kvílil, jeho hlas bol len zmesou panických, zadýchaných čkaní a vzlykov. „Je preč — zem ju zjedla — Kelvin spadol — {{qk.characterName}} sa prepadla do noci!“
 
 Warra a Niran vyskočili z kopy kožušín, uši sa im okamžite nastražili šokom. Warra, poslucháč, chytil Koorliho za plecia a snažil sa z toho panického blábolu niečo vyčítať, no Koorli vedel len divoko ukazovať späť do temného lesa.
 
@@ -79,4 +79,4 @@ Kelvin sa zrútil na hlinenú podlahu hneď vedľa dvoch kokonov. Položil si hl
 
 Warra, Niran a Koorli sa stisli k sebe na machu priamo pri hodvábnej schránke {{qk.characterName}}, pričom tlačili svoje teplé telá na studenú sieť. Vyčerpaní, vydesení a bez sĺz pomaly upadli do nepokojného, úzkostného spánku sprevádzaného tichým, rytmickým hučaním liečivej nory.
 
-[Ďalšia kapitola](0bb1-visions)
+[Ďalšia kapitola](0bb1-inside-out)
