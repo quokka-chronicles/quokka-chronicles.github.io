@@ -232,5 +232,5 @@ k nemu…
 
 alebo preč…
 
-[Pusti Kelvinovu labku a spadni](9999-tbc)
+[Pusti Kelvinovu labku a spadni](0bb0-the-scar)
 [Chyť Kelvinovu labku](9999-tbc)
