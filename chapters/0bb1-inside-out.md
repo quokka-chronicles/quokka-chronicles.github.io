@@ -35,7 +35,7 @@ With every syllable that left his throat, the heavy fluid around Kevin dissipate
 
 "What are you talking about? Just a little closer…" {{qk.characterName}} urged, ignoring the warning as her red stripe flared brighter in response to his presence "...and we’ll touch. Please, help me!"
 
-"...don’t worry, I’m almost there," Kevin zašepkal, his amber eyes fixed on her form. "Just differently than you."
+"...don’t worry, I’m almost there," Kevin whispered, his amber eyes fixed on her form. "Just differently than you."
 
 Tears welling in her eyes, {{qk.characterName}} looked at him with an intensity that made his chest ache. "Kevin… I don’t want you to fall into the darkness again…"
 

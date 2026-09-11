@@ -19,14 +19,14 @@ Od­hodlaný preklenúť nemožnú vzdialenosť, natiahol končatiny proti odpor
 
 „No tak, natiahni labu,“ prosila, oči mala rozšírené, keď sa snažila preplávať prázdnotou k nemu.
 
-Kevin sa zarazil, chladný zimomriavok mu prebehol po chrbtici, keď jej hlas zaznel v jeho mysli skôr, než jej ústa vytvorili slová.
+Kevin strnul. Po chrbte mu prebehli studené zimomriavky, zatiaľ čo jej hlas vibroval v jeho mysli skôr, než vôbec pohla perami.
 „Hm... počul som to, ešte skôr, ako si to povedala.“
 
-Zúfalo sa predieral cez rednúci sliz, sledoval, ako sa jej tvár kriví v zmätku. Jej hlas mu prichádzal ako ozvena odrážajúca sa od steny, ktorá ešte neexistovala.
+Zúfalo sa predieral cez rednúci sliz a sledoval, ako sa jej tvár kriví v zmätku. Jej hlas mu prichádzal ako ozvena odrážajúca sa od steny, ktorá ešte neexistovala.
 
 „Kevin… prosím…“ zakňučala, uši pritlačené, zmätená. „Čo to hovoriš?“
 
-„...to isté, čo ty. Len naopak,“ odpovedal, jeho biela srsť sa trhala ako nestabilný tieň.
+„...presne to isté, čo ty. Len naopak,“ odpovedal, jeho biela srsť sa trhala ako nestabilný tieň.
 
 {{qk.characterName}} naklonila hlavu, hľadala odpovede v jeho bledom pohľade v svete, ktorý žiadne neponúkal.
 „Tak čo chceš, aby sme urobili?“
@@ -42,7 +42,7 @@ S každým slovom, ktoré opustilo jeho hrdlo, hustá tekutina okolo neho redla.
 Slzy sa jej tlačili do očí, pohľad mala taký intenzívny, že mu zvieral hruď.
 „Kevin… nechcem, aby si mi znova spadol do temnoty...“
 
-„Ja ale cítim, akoby som stále padal dole,“ priznal, labky mu otupene hľadali oporu, ktorá tam nebola.
+„Ja ale cítim, akoby som stále padal dole,“ dýchal prerývane, kým labky mu otupene hľadali oporu, ktorá tam nebola.
 
 „Pozri sa dookola!“ vykríkla, mávala malými labkami na nekonečný, trblietavý priestor. „Tu nie je žiadne dole, žiadny smer tu neexistuje. Nemôžeme byť blízko ani ďaleko.“
 
@@ -52,7 +52,7 @@ Kevinovi srdce búšilo ako šialené. Atmosféra bola taká tenká, že dýchan
 
 „Prečo?“ odsekla tvrdohlavo, jej láska prehlušila strach. „Veď som tu. Som tu s tebou!“
 
-„...cítil som ťa skôr, než som ťa zbadal,“ priznal, spomienka na jej dotyk sa mu vrátila v nesprávnom poradí. „To predsa nie je možné. Kaia... takto to nemá byť!“
+„...cítil som ťa skôr, než som ťa zbadal,“ zamrmlal a spomienka na jej dotyk sa mu vrátila v nesprávnom poradí. „To predsa nie je možné. Kaia... takto to nemá byť!“
 
 „Ale neminieme sa úplne,“ trvala na svojom, jej žiariaci chvost kreslil iskry v fialovom vzduchu. „Už ťa cítim bližšie.“
 
@@ -64,7 +64,7 @@ Pokúsil sa priblížiť, ale pohyb sa mu obrátil späť, zložil sa do seba ak
 
 „Prúd ma odtláča preč, no... akoby som sa predsa len blížil?“ pozoroval Kevin, zrak sa mu rozmazával, keď sa priestor ohýbal.
 
-„Snažím sa,“ lapala po dychu {{qk.characterName}}, naťahovala malú labku čo najďalej. „Všetko sa tu hýbe samo. Ale citim, akoby ma... nieslo k tebe.“
+„Snažím sa,“ lapala po dychu {{qk.characterName}} a naťahovala malú labku k nemu čo najbižšie. „Všetko sa tu hýbe samo. Ale cítim, akoby ma... nieslo k tebe.“
 
 Kevin sledoval, ako sa priestor medzi nimi rúca, realita sa skladala dovnútra ako rozdrvený list.
 „...vidím,“ zašepkal. „Vyzeralo to, že sa k sebe nedostaneme. Voľačo ma pevne držalo.“
@@ -86,11 +86,11 @@ Vznášala sa v prázdnote, kde neexistoval vzduch. Pľúca jej horeli, hladné 
 
 A potom ho uvidela.
 
-Pod ňou.
+Rovno pod ňou.
 
 Kevin bol uväznený v hustej, priesvitnej hmote, ktorá sa mu lepila na bielu srsť ako tuhnúca živica. Zmietal sa, škrabal si sliz z očí a čeľuste, bojoval cez ťažkú, tekutú tmu. {{qk.characterName}} natiahla labku, ústa formovali jeho meno v úplnom tichu, telo ju prosilo, aby sa k nemu pohla.
 
-Postupne sa cez prázdnotu prehnal jemný záchvev. Vákuum začalo ustupovať. Studená, ostrá statika jej šteklila kožu, kovový opar jej prenikol do nozdier. Hrudník sa jej rozšíril — prvý nádych hustej, fialovkastej hmly. Ako vzduch okolo nej hustol, jej hlas sa konečne predrali cez hrdlo, surový, zúfalý.
+Postupne sa cez prázdnotu prehnal jemný záchvev. Vákuum začalo ustupovať. Studená, ostrá statika jej šteklila kožu, kovový opar jej prenikol do nozdier. Hrudník sa jej rozšíril — prvý nádych hustej, fialovkastej hmly. Ako vzduch okolo nej hustol, jej hlas sa konečne predral cez hrdlo, surový, zúfalý.
 
 „Kevin… konečne som s tebou. Bála som sa.“
 
@@ -137,7 +137,7 @@ Vzduch okolo {{qk.characterName}} hustol, bol ako studená voda, odporoval každ
 Zadívala sa naň, myseľ sa jej krútila, jeho slová odpovedali na otázky, ktoré ešte ani nepoložila.
 „Tak čo chceš, aby sme urobili?“
 
-„...to isté, čo ty. Len naopak.“
+„...presne to isté, čo ty. Len naopak.“
 
 „Kevin… prosím…“ zakňučala, uši pritlačené. „Čo to hovoríš?“
 

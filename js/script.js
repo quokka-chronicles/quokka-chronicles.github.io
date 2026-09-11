@@ -699,7 +699,7 @@ qk.Chapter = (me => {
                     html += `<p>${x}</p>`;
             }
         });
-        
+
         if (chapter.pathways.length) {
             html += '<nav>';
             chapter.pathways.forEach(pathway => {
@@ -829,7 +829,7 @@ qk.Chapter = (me => {
             console.log(ch);
 
             // If the chapter has no path history, it's the root/first chapter
-            if (!ch.pathlog || ch.path.length < 2) {
+            if (!!ch.pathlog && ch.path.length < 2) {
                 me.Preferences.clearCustom();
             }
 
@@ -971,6 +971,8 @@ qk.Language = (me => {
                 if (me.i18nModule && typeof me.i18nModule.setLanguage === 'function') {
                     await me.i18nModule.setLanguage(selectedLang);
                 }
+
+                me.Theme.refreshText();
                 
                 // 2. Reload the current chapter using the new language folder
                 if (me.Chapter && typeof me.Chapter.load === 'function') {

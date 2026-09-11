@@ -23,7 +23,7 @@ Meanwhile, Kelvin sprinted straight to the central alcove. He found Alaric resti
 
 Alaric’s orange eyes snapped open, the thin vertical slits of his pupils widening instantly. He didn't waste time asking for details. Hearing the words a fresh scar and two fallen, the fox commander bounded out of his den and let out a long, low whistle that vibrated through the high canopy.
 
-Moments later, Kelvin and Alaric stood beneath the ancient, moss-draped branches where the big web-weavers nested. High above, massive, shadow-dark arachnids shifted, their multiple crystalline eyes gleaming in the moonlight like polished obsidian."A scar has opened along the ridge," Alaric called up, his voice ringing with urgent authority. "Two of our own have slipped into the un-formed. We need your threads to stitch the tear and anchor them back."
+Moments later, Kelvin and Alaric stood beneath the ancient, moss-draped branches where the big web-weavers nested. High above, massive, shadow-dark arachnids shifted, their multiple crystalline eyes gleaming in the moonlight like polished obsidian. “A scar has opened near the water bend,” Alaric called up, his voice ringing with urgent authority. "Two of our own have slipped into the un-formed. We need your threads to stitch the tear and anchor them back."
 
 A heavy, chitinous click echoed from the dark branches. The lead weaver, a towering creature whose outer shell rippled with a strange, liquid shimmer, leaned down. Its voice was not a sound, but a series of precise, rhythmic vibrations that resonated directly in their skulls.
 
