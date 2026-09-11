@@ -9,14 +9,13 @@ Jeho nohy boli pevne uväznené v hustej, dusivej hmote, ktorá páchla ozónom 
 
 Svet bol hore nohami — alebo možno bokom. Nad ním sa vzduch stenčoval do bledého, fialového oparu. A tam, zavesená v neprirodzenej nehybnosti, bola {{qk.characterName}}. Jej malé telo sa vznášalo nad ním, karmínová línia na chrbte pulzovala ako dohasínajúca iskra.
 
-Keď sa predieral nahor do ľahšieho vzduchu, zvláštny, obrátený tok času ho zachvátil. Čeľusť sa mu pohla skôr, než stihol myslieť, vyslovujúc slová, ktoré cítil, že už počul.
+Keď sa snažil predrať nahor do ľahšieho vzduchu, zachvátil ho zvláštny, akoby obrátený tok času. Čeľusť sa mu pohla skôr, než stihol myslieť, vyslovujúc slová, ktoré cítil, že už počul.
 
 „...{{qk.characterName}}—“ zachrapčal, hlas mu znel akoby spoza vlastných uší.
 
-„Kevin—!“ jej náhly výkrik bol plný zúfalej, dych vyrážajúcej úľavy, ktorá prerazila cez opar.
+„Kevin—!“ jej náhly výkrik bol plný zúfalej, ale dych vyrážajúcej úľavy, akoby spadol kameň zo srdca.
 
-Od­hodlaný preklenúť nemožnú vzdialenosť, natiahol končatiny proti odporu ťažkého vzduchu.
-„Počkaj, chytím ťa.“
+Od­hodlaný preklenúť nemožnú vzdialenosť, natiahol končatiny proti odporu ťažkého vzduchu. „Počkaj, chytím ťa.“
 
 „No tak, natiahni labu,“ prosila, oči mala rozšírené, keď sa snažila preplávať prázdnotou k nemu.
 
@@ -25,7 +24,7 @@ Kevin sa zarazil, chladný zimomriavok mu prebehol po chrbtici, keď jej hlas za
 
 Zúfalo sa predieral cez rednúci sliz, sledoval, ako sa jej tvár kriví v zmätku. Jej hlas mu prichádzal ako ozvena odrážajúca sa od steny, ktorá ešte neexistovala.
 
-„Kevin… prosím…“ zakňučala, uši pritlačené, zmätená. „Čo to hovoris?“
+„Kevin… prosím…“ zakňučala, uši pritlačené, zmätená. „Čo to hovoriš?“
 
 „...to isté, čo ty. Len naopak,“ odpovedal, jeho biela srsť sa trhala ako nestabilný tieň.
 
@@ -70,7 +69,7 @@ Pokúsil sa priblížiť, ale pohyb sa mu obrátil späť, zložil sa do seba ak
 Kevin sledoval, ako sa priestor medzi nimi rúca, realita sa skladala dovnútra ako rozdrvený list.
 „...vidím,“ zašepkal. „Vyzeralo to, že sa k sebe nedostaneme. Voľačo ma pevne držalo.“
 
-{{qk.characterName}} sa mu zahľadela do očí, žiarili čistou, surovou emóciou.
+{{qk.characterName}} sa mu zahľadela do očí, žiarili čistou, no silnou emóciou.
 „Kevin… konečne som s tebou. Bála som sa.“
 
 Ich labky sa dotkli — nemožný, krátky dotyk tepla.
@@ -150,7 +149,7 @@ Priestor medzi nimi sa zhutnil do ťažkej, sirupovej masy. Kaia sotva zdvihla l
 
 „Počkaj, chytím ťa,“ zavolal Kevin, napínal sa proti rednúcemu vákuu.
 
-„Kevin—!“ vvykríkla a z hrdla sa jej derie zúfalá, no nesmierna úľava, ktorá preťala všetok strach.
+„Kevin—!“ vykríkla a z hrdla sa jej derie nesmierna úľava, ktorá prebila všetok strach.
 
 „...Kaia—“ zachrapčal, hlas mu znel ako vzdialený šepot spoza jej uší.
 
