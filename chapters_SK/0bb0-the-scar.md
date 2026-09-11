@@ -1,5 +1,5 @@
-@[Quokka-Chronicles](0000-quokka-chronicles) > [Prelínači](0000-quokka-chronicles) > [Úkryt](0002-the-fungal-veil) > [Objatie](0003-the-embrace) > [Líščia nora a potôčik](0004-the-den-and-the-flow) > [O chlapcoch s menom a dievčati bez neho](0005-the-four-furr) > [{{qk.characterName}}] > [S iskrou v duši](0006-the-student-and-the-spark) [Zostaň s bratmi] > [Svetlo v rozbitom tieni](0b00-echoes-in-broken-lands) > [Červená armáda](0b01-broken-lands-2) > [Pridaj sa k červenej armáde] > [Tábor](0ba0-into-the-camp) > [Bratia zo snežných hôr](0ba1-kevin-kelvin) > [Tajné cestičky](0ba2-hidden-paths) > [Krehká realita](0ba3-visions) > [Pusti Kelvinovu labku a spadni] > [Jazva](0bb0-the-scar)
-# Zjazveny svet
+@[Quokka-Chronicles](0000-quokka-chronicles) > [Prelínači](0000-quokka-chronicles) > [Úkryt](0002-the-fungal-veil) > [Objatie](0003-the-embrace) > [Líščia nora a potôčik](0004-the-den-and-the-flow) > [O chlapcoch s menom a dievčati bez neho](0005-the-four-furr) > [{{qk.characterName}}] > [S iskrou v duši](0006-the-student-and-the-spark) [Zostaň s bratmi] > [Svetlo v rozbitom tieni](0b00-echoes-in-broken-lands) > [Červená armáda](0b01-broken-lands-2) > [Pridaj sa k červenej armáde] > [Tábor](0ba0-into-the-camp) > [Bratia zo snežných hôr](0ba1-kevin-kelvin) > [Tajné cestičky](0ba2-hidden-paths) > [Krehká realita](0ba3-visions) > [Pusti Kelvinovu labku a spadni] > [Zjazveny svet](0bb0-the-scar)
+# Zjazvený svet
 
 Malá sivá labka sa pošmykla.
 
@@ -29,7 +29,7 @@ O chvíľu neskôr stáli Kelvin a Alaric pod starovekými, machom opradenými k
 
 Z tmavých konárov sa ozvalo ťažké, chitínové puknutie. Hlavný snovač, týčiaci sa tvor, ktorého vonkajšia schránka vlnila podivným, tekutým leskom, sa naklonil dopredu. Jeho hlas nebol zvukom, ale sériou presných, rytmických vibrácií, ktoré rezonovali priamo v ich lebkách.
 
-Jazva sa dá zošiť,“ klikal snovač, jeho tón bol vypočítavý a chladný ako ľad. „Posunujúci sa šev sa dá spojiť. No vyloviť dušu z hlbokého prúdu je otázkou napätia. Jediná niť hodená do ne-priestoru sa kolíše bez pokoja. Kĺže okolo osamelého tieňa. Ak neexistujú aspoň dva body hmoty na vytvorenie krížového uzla, naše vlákna nnemusia najsť nič, čo by mohli pritiahnuť.“
+Jazva sa dá zošiť,“ klikal snovač, jeho tón bol vypočítavý a chladný ako ľad. „Posunujúci sa šev sa dá spojiť. No vyloviť dušu z hlbokého prúdu je otázkou napätia. Jediná niť hodená do ne-priestoru sa kolíše bez pokoja. Kĺže okolo osamelého tieňa. Ak neexistujú aspoň dva body hmoty na vytvorenie krížového uzla, naše vlákna nemusia najsť nič, čo by mohli pritiahnuť.“
 
 „Spadli tam spolu!“ štekol Kelvin, vykročil vpred a srsť sa mu ježila. „Sú tam dole dvaja. Spadli do tej istej jazvy!“
 
