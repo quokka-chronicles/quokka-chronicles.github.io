@@ -137,4 +137,4 @@ An explosive surge of energy erupted at the point of contact. Instantly, Kevin w
 
 She struggled, but the pressure grew absolute, cocooning her in an impenetrable, heavy shell. Darkness crept over her eyes as the invisible weight pressed down, cutting off the light. Yet, as her senses faded into the heavy, motionless dark, her last spiraling thought echoed through her mind: Kevin…
 
-[Next Chapter](9999-tbc)
+[Next Chapter](0bb2-recovery)

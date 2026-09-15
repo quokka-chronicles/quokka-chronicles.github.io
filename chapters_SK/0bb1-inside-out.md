@@ -90,7 +90,7 @@ Rovno pod ňou.
 
 Kevin bol uväznený v hustej, priesvitnej hmote, ktorá sa mu lepila na bielu srsť ako tuhnúca živica. Zmietal sa, škrabal si sliz z očí a čeľuste, bojoval cez ťažkú, tekutú tmu. {{qk.characterName}} natiahla labku, ústa formovali jeho meno v úplnom tichu, telo ju prosilo, aby sa k nemu pohla.
 
-Postupne sa cez prázdnotu prehnal jemný záchvev. Vákuum začalo ustupovať. Studená, ostrá statika jej šteklila kožu, kovový opar jej prenikol do nozdier. Hrudník sa jej rozšíril — prvý nádych hustej, fialovkastej hmly. Ako vzduch okolo nej hustol, jej hlas sa konečne predral cez hrdlo, surový, zúfalý.
+Postupne sa cez prázdnotu prehnal jemný záchvev. Vákuum začalo ustupovať. Studená, ostrá statika jej šteklila kožu, kovový opar jej prenikol do nozdier. Hrudník sa jej rozšíril — prvý nádych hustej, fialovkastej hmly. Ako vzduch okolo nej hustol, jej hlas sa konečne predral cez hrdlo, zachrípnutý a zúfalý.
 
 „Kevin… konečne som s tebou. Bála som sa.“
 
@@ -173,4 +173,4 @@ A keď jej zmysly mizli v ťažkej, nehybnej tme, posledná myšlienka sa jej to
 
 Kevin…
 
-[Ďalšia kapitola](9999-tbc)
+[Ďalšia kapitola](0bb2-recovery)

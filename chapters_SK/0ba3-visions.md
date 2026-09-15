@@ -110,7 +110,7 @@ Jemné olizovanie jej rán.
 Ale útecha len prehĺbila bolesť — Kevinova strata ju roztrhla zvnútra.
 
 Zpoza matky vystúpili štyri postavy.
-Všetky boli ona — rovnaký vek, žiariace čiari na ich chrbtoch, každá inej farby.
+Všetky boli ona — rovnaký vek, žiariace čiari na ich chrbtoch, každá inej farby, len nie červená.
 
 Prvá ju objala.
 Druhá pobozkala matku.
