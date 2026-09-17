@@ -1,4 +1,4 @@
-@[Quokka-Chronicles](0000-quokka-chronicles) > [Prelínači](0000-quokka-chronicles) > [Úkryt](0002-the-fungal-veil) > [Objatie](0003-the-embrace) > [Líščia nora a potôčik](0004-the-den-and-the-flow) > [O chlapcoch s menom a dievčati bez neho](0005-the-four-furr) > [{{qk.characterName}}] > [S iskrou v duši](0006-the-student-and-the-spark) [Zostaň s bratmi] > [Svetlo v rozbitom tieni](0b00-echoes-in-broken-lands) > [Červená armáda](0b01-broken-lands-2) > [Pridaj sa k červenej armáde] > [Tábor](0ba0-into-the-camp) > [Bratia zo snežných hôr](0ba1-kevin-kelvin) > [Tajné cestičky](0ba2-hidden-paths) > [Krehká realita](0ba3-visions) > [Pusti Kelvinovu labku a spadni] > [Zjazveny svet](0bb0-the-scar) > [Dve strany jednej jazvy](0bb1-inside-out) > [Čo sa skrýva v nás](0bb2-recovery)
+@[Quokka-Chronicles](0000-quokka-chronicles) > [Prelínači](0000-quokka-chronicles) > [Úkryt](0002-the-fungal-veil) > [Objatie](0003-the-embrace) > [Líščia nora a potôčik](0004-the-den-and-the-flow) > [O chlapcoch s menom a dievčati bez neho](0005-the-four-furr) > [{{qk.characterName}}] > [S iskrou v duši](0006-the-student-and-the-spark) > [Zostaň s bratmi] > [Svetlo v rozbitom tieni](0b00-echoes-in-broken-lands) > [Červená armáda](0b01-broken-lands-2) > [Pridaj sa k červenej armáde] > [Tábor](0ba0-into-the-camp) > [Bratia zo snežných hôr](0ba1-kevin-kelvin) > [Tajné cestičky](0ba2-hidden-paths) > [Krehká realita](0ba3-visions) > [Pusti Kelvinovu labku a spadni] > [Zjazveny svet](0bb0-the-scar) > [Dve strany jednej jazvy](0bb1-inside-out) > [Čo sa skrýva v nás](0bb2-recovery)
 # Čo sa skrýva v nás
 Bledé lúče zapadajúceho slnka prelievali cez čistinku tekuté zlato. Tráva chladla pod večernou rosou a vzduch voňal jemným, medovým nektárom zo štiepiacich kvetov. Na okraji potôčika, kde sa kryštálová voda ticho prelievala cez zaoblené skaly, sedela {{qk.characterName}}. Jej karmínová línia na chrbte len ticho pulzovala v rytme jej zrýchleného dychu.
 
@@ -46,7 +46,7 @@ Kevin sa na ňu pozrel. Jeho pohľad bol taký intenzívny, že sa jej zatočila
 
 „{{qk.characterName}}…“ začal, no slová mu zamrzli v hrdle. 
 
-Slnko definitivne kleslo za horizont a les na druhej strane čistinky pohltil neprirodzene hustý, atramentový tieň. Realita sa zrazu pretrhla. Stromy na okraji lesa sa začali sa zvláštne prekrývať, ohýbať v nemožných uhloch a zoradovať do neznámych geometrických vzorov, akoby sa priamo pred ich očami skomponoval nejaký cudzí les vnútri lesa.
+Slnko definitívne kleslo za horizont a les na druhej strane čistinky pohltil neprirodzene hustý, atramentový tieň. Realita sa zrazu pretrhla. Stromy na okraji lesa sa začali sa zvláštne prekrývať, ohýbať v nemožných uhloch a zoradovať do neznámych geometrických vzorov, akoby sa priamo pred ich očami skomponoval nejaký cudzí les vnútri lesa.
 
 A potom z tej priestorovej trhliny niečo vykročilo.
 
@@ -56,9 +56,13 @@ Z trhliny okolo neho začal vyletovať mrak obrovských, čiernych sršňov. Ich
 
 „Ani sa nepohni…“ zašepkal Kevin, jeho hlas sa triasol.
 
-Varan aj sršne dokonale splývali s hustnúcou tmou, no ich čierna žiara parazitovala na zraku. Jeden z obrovských sršňov prudko zmenil smer. S bzučaním, ktoré znelo ako víchrica, vystrelil priamo k nim.
+Varan aj sršne dokonale splývali s hustnúcou tmou, no ich čierna žiara parazitovala na zraku. Jeden z obrovských sršňov nízko vybehol z mraku. Vzduchom sa rozprestrelo ťažké, hlboké bzučanie, ktoré rezonovalo až v kostiach. Sršeň spravil vo vzduchu prudký, nepredvídateľný hák a zamieril priamo k nim.
 
-{{qk.characterName}} to nevydržala. Panika prevalcovala všetku odvahu. Trhla sebou práve vo chvíli, keď sršeň dosadol na jej plece. Sršeň zarazil svoje masívne, lesklé žihadlo do mäkkej pokožky.
+{{qk.characterName}} zatajila dych. Celé jej telo stuhlo. Vnímala, ako sa ten obrovský, čierny tieň približuje — pomaly, nemilosrdne, vrstvu po vrstve presekávajúc priestor. Znechutenie a panika sa jej drsne drali do hrdla. Videla každý detail jeho lesklých nôh a cítila chladný závan, ktorý vírili jeho masívne krídla. V duchu si opakovala Kevinovo varovanie — ani sa nehni. Boli to sekundy natiahnuté do večnosti, počas ktorých sa snažila splynúť so zemou, potlačiť v sebe každý záchvev života.
+
+No tvor sa nezastavil. Prudko dosadol priamo pred ňu. Bol tak blízko, že cítila dotyk jeho chĺpkov na svojom ňufáku. Bzučanie a vibrácie jej rezonovali priamo na tvári a tvor jej začal pomaly, s odpornou odhodlanosťou a zvedavosťou preliezať po ňufáku smerom k očiam.
+
+Hnus a rýdzy, paralyzujúci strach napokon presekali poslednú niť jej sebaovládania. {{qk.characterName}} to nevydržala. S tlmeným výkrikom trhla hlavou v zúfalej snahe strhnúť zo seba ten hmyzí prízrak. Sršeňbez zaváhania zarazil svoje masívne, lesklé žihadlo do mäkkej pokožky.
 
 Horúca, jedovatá bolesť jej preletela telom ako blesk.
 
@@ -88,7 +92,7 @@ Jej zúfalý výkrik preťal ticho nory ako čepeľ. V tom istom momente sa z ve
 
 „Ty žiješ!“ vyhŕkol Koorli a bez zaváhania sa na ňu vrhol, objímajúc ju tak pevne, až jej vyrazil dych.
 
-„Ako ti je? Bolesť? Čo ťa bolí?“ zasypali ju otázkami, kým Niran už štartoval ku vchodu nory. „Idem po liečiteľa! Hneď som späť!“
+„Ako ti je? Cítiš bolesť? Čo ťa bolí?“ zasypali ju otázkami, kým Niran už štartoval ku vchodu nory. „Idem po liečiteľa! Hneď som späť!“
 
 „Čakaj, Niran, stoj!“ zachrapčala {{qk.characterName}}. Bola ešte stále dezorientovaná, hlava sa jej krútila a svet okolo nej pôsobil nekutočne krehko, akoby bol zložený z viacerých nepresne priliehajúcich vrstiev. Koorli jej pohotovo strčil pod nos hrsť jej najobľúbenejších, šťavnatých kvetných lístkov, no ona ich len jemne odsunula.
 
@@ -156,7 +160,7 @@ Ešte pred dorazením k samotnému kráteru natrafili na líščiu hliadku. Räv
 
 Alaric prikývol a pokračoval ďalej. Ale keď sa dostali na dohľad od miesta, kde {{qk.characterName}} a Kevin spadli do jazvy, zdvihol labku a všetkých zastavil. Otočil sa k pavúčím inžinierom: „Vidíte tú jazvu?“
 
-Jeden z masívnych pavúkov sa mierne naklonil, pričom jeho mnohopočetné oči blikali v technickom vyhodnocovaní priestoru. Ich svtelo-štepiace oči, čierne, hlboké lesklé guľôčky neboli jednoliate – v strede každej z nich sa rýsovala tenká, žiarivo oranžová čiara nahradzujúca zreničku. Tieto oranžové štrbiny sa pri pohľade na priehlbinu sťahovali, rozťahovali do strán, rotovali okolo vlastnej osi a každá z nich sa hrbila v úplne inom uhle a tempe. Pavúk si tak cez desiatky odlišných ohniskových vzdialeností a zrkadlení doslova rozkladal mriežku miesta na najmenšie časti.
+Jeden z masívnych pavúkov sa mierne naklonil, pričom jeho mnohopočetné oči blikali v technickom vyhodnocovaní priestoru. Ich svetlo-štepiace oči, čierne, hlboké lesklé guľôčky neboli jednoliate – v strede každej z nich sa rýsovala tenká, žiarivo oranžová čiara nahradzujúca zreničku. Tieto oranžové štrbiny sa pri pohľade na priehlbinu sťahovali, rozťahovali do strán, rotovali okolo vlastnej osi a každá z nich sa hrbila v úplne inom uhle a tempe. Pavúk si tak cez desiatky odlišných ohniskových vzdialeností a zrkadlení doslova rozkladal mriežku miesta na najmenšie časti.
 
 „Jazva vykazuje nulovú tendenciu k spontánnej re-dilatácii,“ ozval sa mechanický, rezonujúci hlas pavúčieho inžiniera, sprevádzaný jemným cvakaním jeho hryzadiel. „Jazva je zosilnená, zošitá časopriestorovou sieťou v sub-hmotnej vrstve. Tkanivo drží v absolútne stabilnej, uzatvorenej geometrii. Tlak zvnútra nepredstavuje hrozbu — vektorové napätie je vynulované, priepustnosť lokálneho poľa drží na nule. Zvnútra ju určite nič neotvorí.“
 
@@ -196,13 +200,13 @@ Postavili sa nabok, no tak, aby mali na preliačinu jasný výhľad. Pavúci sa 
 
 Ako sa ďalej približovali, realita sa trhala ako stará tkanina. Keď zastavili priamo na jej okraji, pod nohami sa im opäť roztvorila tá istá bezedná, nepreniknuteľná temnota, ktorá ich doslova ťahala do svojho vnútra, akoby chcela pohltiť samotnú ich existenciu.
 
-„A teraz, {{qk.characterName}} … opatrné a pomaly urob krok späť,“ zašepkal Alaric.
+„A teraz, {{qk.characterName}} … opatrne a pomaly urob krok späť,“ zašepkal Alaric.
 
-{{qk.characterName}} pomaly ustupovala. S každým jej krokom smerom od Kevina a od krátera sa temná trhlina zmršťovala, až sa jazva s jemným popnutím úplne zavrela.
+{{qk.characterName}} pomaly ustupovala. S každým jej krokom smerom od Kevina a od krátera sa temná trhlina zmršťovala, až sa jazva s tlmeným šklbnutím úplne zavrela.
 
 Celý pol tucet obrovských pavúkov sa v tej chvíli pootočil. Štyridsaťosem zrkadliacich sa, atramentovo čiernych očí nehlučne spočinulo na malej quokke a bielom líšiakovi.  
 
-Žiarivé oranžové zreničky, tenké ako vlasové puky na povrchu kryštálu, na okamih úplne zastavili svoj rotujúci tanec. V tom tichu nebolo ani stopy po strachu, ani náznak paniky či zvieracieho inštinktu.
+Žiarivé oranžové zreničky, tenké ako jemné prasklinky v kryštáli, na okamih úplne zastavili svoj rotujúci tanec. V tom tichu nebolo ani stopy po strachu, ani náznak paniky či zvieracieho inštinktu.
 
 V ich pohľade nebol strach ani panika – bol to pohľad fascinovaných vedcov, ktorí práve s úžasom obajvili niečo veľmi zaujímavé.
 

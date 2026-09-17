@@ -60,11 +60,19 @@ A cloud of enormous black hornets poured from the tear around it. Their buzzing 
 
 “Don’t move…” Kevin whispered, his voice trembling.
 
-The creature and its hornets blended perfectly with the thickening night, yet their black glow gnawed at the edges of vision. One hornet broke formation, veering sharply. With a roar like a sudden gale, it shot straight toward them.
+The varan and its swarm blended perfectly into the thickening dark, yet their black radiance gnawed at the edges of sight. One of the massive hornets broke away from the cloud, dropping low. A heavy, low buzzing rolled through the air — a sound that seemed to vibrate straight into the bones. The creature jerked into a sharp, unpredictable arc and shot directly toward them.
 
-{{qk.characterName}} couldn’t hold still. Panic crushed her courage. She jerked just as the hornet landed on her shoulder. Its massive, glossy stinger plunged into her skin.
+{{qk.characterName}} held her breath. Her whole body locked in place. She felt the enormous shadow closing in — slow, merciless, slicing through the air layer by layer. Revulsion and panic clawed up her throat. She saw every detail of its glossy legs, felt the cold draft stirred by its massive wings. In her mind she repeated Kevin’s warning — don’t move. Seconds stretched into an eternity as she tried to melt into the ground, suppressing every twitch of life inside her.
 
-A hot, venomous bolt of pain tore through her body.
+But the creature didn’t stop.
+
+It landed hard right in front of her. So close she felt the brush of its bristled hairs against her muzzle. The buzzing and vibration resonated directly across her face as the hornet began to crawl upward — slow, deliberate, sickeningly curious — climbing from her muzzle toward her eyes.
+
+Disgust and pure, paralyzing fear snapped the last thread of her self‑control.
+
+{{qk.characterName}} couldn’t endure it. With a muffled cry she jerked her head, desperate to fling the insect horror off her. The hornet reacted instantly, driving its massive, glossy stinger straight into the soft skin beneath her fur.
+
+A bolt of hot, venomous pain tore through her body like lightning.
 
 Kevin lunged, pinning her to the ground, covering her mouth with his paw. “Shhh—!”
 
@@ -154,7 +162,7 @@ Alaric walked ahead, his fox fur catching the striped light. Behind him followed
 
 {{qk.characterName}} walked among them, still feeling faint echoes of the dream. Every step reminded her that only hours ago she had been wrapped in the black tongue of something that should not exist.
 
-As they approached the stream near the edge of camp, Alaric spoke in a low voice. “Our scouts report more broken lands from nearly every direction. They’re appearing faster than ever. And worse… new types of Mergers. Some of these split‑beings seem able to open and close scars at will. We need to understand what happened here. How you, {{qk.characterName}}, managed to open this one. None of our patrols noticed it before.”
+As they approached the stream near the edge of camp, Alaric spoke in a low voice. “Our scouts report more broken lands from nearly every direction. They’re appearing faster than ever. And worse… new types of Mergers. Some of them seem able to open and close scars at will. We need to understand what happened here. How you, {{qk.characterName}}, managed to open this one. None of our patrols noticed it before.”
 
 {{qk.characterName}}  swallowed. Kevin glanced at her — brief, but full of unspoken questions.
 
