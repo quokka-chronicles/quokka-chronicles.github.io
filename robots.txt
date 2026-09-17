@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of internal assets or scripts
+Disallow: /js/
+Disallow: /css/
+
+# Link to your XML Sitemap (Replace with your actual domain)
+Sitemap: https://quokka-chronicles.github.io/sitemap.xml
